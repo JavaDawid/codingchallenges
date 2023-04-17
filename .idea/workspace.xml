@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="delete Anagram." />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Commit PalindromeApp.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/Palindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/PalindromeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/PalindromeApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +47,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.leetcode.palidrome9">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
@@ -59,8 +63,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="leetcode.palidrome9" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.palidrome9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.palidrome9" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.leetcode.palidrome9" />
         <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
@@ -110,7 +131,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681753346654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Change at workspace.">
+      <created>1681754359794</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681754359794</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Commit PalindromeApp.">
+      <created>1681754463939</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681754463939</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +206,8 @@
     <MESSAGE value="commit Palindrome." />
     <MESSAGE value="commit Anagram." />
     <MESSAGE value="delete Anagram." />
-    <option name="LAST_COMMIT_MESSAGE" value="delete Anagram." />
+    <MESSAGE value="Change at workspace." />
+    <MESSAGE value="Commit PalindromeApp." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit PalindromeApp." />
   </component>
 </project>
