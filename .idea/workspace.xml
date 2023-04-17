@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="commit Anagram." />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="delete Anagram." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681753283662</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="delete Anagram.">
+      <created>1681753346654</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681753346654</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +170,7 @@
     <MESSAGE value="commit" />
     <MESSAGE value="commit Palindrome." />
     <MESSAGE value="commit Anagram." />
-    <option name="LAST_COMMIT_MESSAGE" value="commit Anagram." />
+    <MESSAGE value="delete Anagram." />
+    <option name="LAST_COMMIT_MESSAGE" value="delete Anagram." />
   </component>
 </project>
