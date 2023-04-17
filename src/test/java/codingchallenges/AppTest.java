@@ -2,7 +2,7 @@ package codingchallenges;
 
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 /**
@@ -16,6 +16,6 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+        assertEquals(true, true);
     }
 }

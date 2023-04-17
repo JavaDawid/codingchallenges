@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Commit Palindrome test and create PalindromeApp.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/PalindromeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/PalindromeApp.java" afterDir="false" />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="PalindromeApp corrections.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/palidrome9/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/palidrome9/PalindromeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <recent name="leetcode.palidrome9" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.leetcode.palidrome9">
+  <component name="RunManager" selected="JUnit.PalindromeTest.shouldIsPalindrome">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
@@ -69,6 +70,22 @@
       <option name="PACKAGE_NAME" value="codingchallenges" />
       <option name="MAIN_CLASS_NAME" value="codingchallenges.AppTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PalindromeTest.shouldIsPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.palidrome9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.palidrome9" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.palidrome9.PalindromeTest" />
+      <option name="METHOD_NAME" value="shouldIsPalindrome" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,6 +108,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PalindromeTest.shouldIsPalindrome" />
         <item itemvalue="TestNG.leetcode.palidrome9" />
         <item itemvalue="JUnit.AppTest" />
       </list>
@@ -162,7 +180,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681755632348</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="PalindromeApp corrections.">
+      <created>1681755819029</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681755819029</updated>
+    </task>
+    <task id="LOCAL-00010" summary="PalindromeApp corrections.">
+      <created>1681755896569</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681755896569</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +258,7 @@
     <MESSAGE value="Change at workspace." />
     <MESSAGE value="Commit PalindromeApp." />
     <MESSAGE value="Commit Palindrome test and create PalindromeApp." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Palindrome test and create PalindromeApp." />
+    <MESSAGE value="PalindromeApp corrections." />
+    <option name="LAST_COMMIT_MESSAGE" value="PalindromeApp corrections." />
   </component>
 </project>
