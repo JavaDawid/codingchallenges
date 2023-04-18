@@ -4,29 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Palindrome corrections and finished test.">
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/PalindromeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/PalindromeApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-        <option value="JUnit5 Test Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -44,76 +30,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="leetcode.palidrome9" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.PalindromeTest.shouldIsPalindrome">
-    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="codingchallenges.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="codingchallenges" />
-      <option name="MAIN_CLASS_NAME" value="codingchallenges.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PalindromeTest.shouldIsPalindrome" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.palidrome9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.palidrome9" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.palidrome9.PalindromeTest" />
-      <option name="METHOD_NAME" value="shouldIsPalindrome" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leetcode.palidrome9" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.palidrome9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.palidrome9" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.PalindromeTest.shouldIsPalindrome" />
-        <item itemvalue="TestNG.leetcode.palidrome9" />
-        <item itemvalue="JUnit.AppTest" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -123,120 +42,18 @@
       <option name="presentableId" value="Default" />
       <updated>1681739729678</updated>
       <workItem from="1681739731643" duration="789000" />
-      <workItem from="1681801404481" duration="2627000" />
     </task>
-    <task id="LOCAL-00001" summary="commit Palindrome.">
-      <created>1681752089776</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1681752089776</updated>
-    </task>
-    <task id="LOCAL-00002" summary="commit Palindrome.">
-      <created>1681752548669</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1681752548669</updated>
-    </task>
-    <task id="LOCAL-00003" summary="commit Palindrome.">
-      <created>1681753071208</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1681753071208</updated>
-    </task>
-    <task id="LOCAL-00004" summary="commit Anagram.">
-      <created>1681753283662</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1681753283662</updated>
-    </task>
-    <task id="LOCAL-00005" summary="delete Anagram.">
-      <created>1681753346654</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1681753346654</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Change at workspace.">
-      <created>1681754359794</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1681754359794</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Commit PalindromeApp.">
-      <created>1681754463939</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1681754463939</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Commit Palindrome test and create PalindromeApp.">
-      <created>1681755632348</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1681755632348</updated>
-    </task>
-    <task id="LOCAL-00009" summary="PalindromeApp corrections.">
-      <created>1681755819029</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1681755819029</updated>
-    </task>
-    <task id="LOCAL-00010" summary="PalindromeApp corrections.">
-      <created>1681755896569</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1681755896569</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Palindrome corrections and finished test.">
-      <created>1681758512149</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1681758512149</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ID_ORDER">
-      <list>
-        <option value="Default.Root" />
-        <option value="Default.Author" />
-        <option value="Default.Date" />
-        <option value="Default.Subject" />
-        <option value="Space.CommitStatus" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="9" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -256,18 +73,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit Palindrome" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="commit Palindrome." />
-    <MESSAGE value="commit Anagram." />
-    <MESSAGE value="delete Anagram." />
-    <MESSAGE value="Change at workspace." />
-    <MESSAGE value="Commit PalindromeApp." />
-    <MESSAGE value="Commit Palindrome test and create PalindromeApp." />
-    <MESSAGE value="PalindromeApp corrections." />
-    <MESSAGE value="Palindrome corrections and finished test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Palindrome corrections and finished test." />
   </component>
 </project>
