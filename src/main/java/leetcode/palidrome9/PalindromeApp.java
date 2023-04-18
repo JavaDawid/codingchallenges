@@ -5,6 +5,6 @@ public class PalindromeApp {
         Palindrome palindrome = new Palindrome();
         int number = palindrome.takeDigitFromUser();
         boolean isPalindrome = palindrome.isPalindrome(number);
-        System.out.println("Czy cyfra " + number + " jest polindromem? \n" + isPalindrome);
+        System.out.println("Czy cyfra " + number + " jest palindromem? \n" + isPalindrome);
     }
 }
