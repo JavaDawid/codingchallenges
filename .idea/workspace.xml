@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Changes.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/anagram242/Anagram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/anagram242/AnagramTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/palidrome9/PalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/palidrome9/PalindromeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create class Anagram and test class AnagramTest." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681808106400</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create class Anagram and test class AnagramTest.">
+      <created>1681816766289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681816766289</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +219,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes." />
+    <MESSAGE value="Create class Anagram and test class AnagramTest." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create class Anagram and test class AnagramTest." />
   </component>
 </project>
