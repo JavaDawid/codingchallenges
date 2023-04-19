@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create class Anagram and test class AnagramTest." />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create package,class Sum,SumApp and create test class.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,15 +17,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,22 +59,23 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode.firstUniqeCharacter387" />
       <recent name="leetcode.two.sum1" />
       <recent name="leetcode.anagram242" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SumTest.shouldGivePositiveTarget">
-    <configuration name="AnagramTest.shouldCheckThatWordIsAnagram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CharacterTest.shouldReturnFirstUniqChar">
+    <configuration name="CharacterTest.shouldReturnFirstUniqChar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.anagram242.*" />
+          <option name="PATTERN" value="leetcode.firstUniqeCharacter387.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.anagram242" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.anagram242.AnagramTest" />
-      <option name="METHOD_NAME" value="shouldCheckThatWordIsAnagram" />
+      <option name="PACKAGE_NAME" value="leetcode.firstUniqeCharacter387" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.firstUniqeCharacter387.CharacterTest" />
+      <option name="METHOD_NAME" value="shouldReturnFirstUniqChar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
         <item itemvalue="TestNG.leetcode.palidrome9" />
         <item itemvalue="JUnit.SumTest.shouldGivePositiveTarget" />
         <item itemvalue="JUnit.SumTest" />
         <item itemvalue="JUnit.PalindromeTest.shouldIsPalindrome" />
-        <item itemvalue="JUnit.AnagramTest.shouldCheckThatWordIsAnagram" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681739729678</updated>
       <workItem from="1681739731643" duration="789000" />
+      <workItem from="1681889305384" duration="299000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -201,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681827646543</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create package,class Sum,SumApp and create test class.">
+      <created>1681841031541</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681841031541</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
