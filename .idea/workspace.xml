@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create Character class and CharacterTest class.">
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create code in Character and CharacterTest.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/reverseString/Reverse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/reverseString/ReverseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -59,6 +59,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode.reverseString" />
+      <recent name="leetcode.ReverseString" />
       <recent name="leetcode.firstUniqeCharacter387" />
       <recent name="leetcode.two.sum1" />
       <recent name="leetcode.anagram242" />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
-        <item itemvalue="Application.CharacterApp" />
         <item itemvalue="TestNG.leetcode.palidrome9" />
         <item itemvalue="JUnit.SumTest.shouldGivePositiveTarget" />
         <item itemvalue="JUnit.SumTest" />
+        <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
+        <item itemvalue="Application.CharacterApp" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +163,7 @@
       <updated>1681739729678</updated>
       <workItem from="1681739731643" duration="789000" />
       <workItem from="1681889305384" duration="7350000" />
+      <workItem from="1681900055592" duration="9548000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -235,7 +238,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="1" />
+                        <option value="344" />
                       </list>
                     </value>
                   </entry>
