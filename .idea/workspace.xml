@@ -66,7 +66,7 @@
       <recent name="leetcode.anagram242" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CharacterTest.shouldReturnFirstUniqChar">
+  <component name="RunManager" selected="JUnit.ReverseTest">
     <configuration name="CharacterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.firstUniqeCharacter387.CharacterApp" />
       <module name="codingchallenges" />
@@ -96,32 +96,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.two.sum1.*" />
+          <option name="PATTERN" value="leetcode.reverseString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.two.sum1" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.two.sum1.SumTest" />
+      <option name="PACKAGE_NAME" value="leetcode.reverseString" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.reverseString.ReverseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumTest.shouldGivePositiveTarget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReverseTest.shouldReverseString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.two.sum1.*" />
+          <option name="PATTERN" value="leetcode.reverseString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.two.sum1" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.two.sum1.SumTest" />
-      <option name="METHOD_NAME" value="shouldGivePositiveTarget" />
+      <option name="PACKAGE_NAME" value="leetcode.reverseString" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.reverseString.ReverseTest" />
+      <option name="METHOD_NAME" value="shouldReverseString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,8 +146,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.leetcode.palidrome9" />
-        <item itemvalue="JUnit.SumTest.shouldGivePositiveTarget" />
-        <item itemvalue="JUnit.SumTest" />
+        <item itemvalue="JUnit.ReverseTest.shouldReverseString" />
+        <item itemvalue="JUnit.ReverseTest" />
         <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
         <item itemvalue="Application.CharacterApp" />
       </list>
