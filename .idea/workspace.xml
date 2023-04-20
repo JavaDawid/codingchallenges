@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create code in Character and CharacterTest.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/reverseString/Reverse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/reverseString/ReverseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create class Reverse and ReverseTest with code." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="344" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -270,7 +266,8 @@
     <MESSAGE value="Create class Anagram and test class AnagramTest." />
     <MESSAGE value="Create package,class Sum,SumApp and create test class." />
     <MESSAGE value="Create Character class and CharacterTest class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Character class and CharacterTest class." />
+    <MESSAGE value="Create class Reverse and ReverseTest with code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create class Reverse and ReverseTest with code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
