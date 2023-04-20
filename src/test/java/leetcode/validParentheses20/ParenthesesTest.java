@@ -11,6 +11,7 @@ class ParenthesesTest {
         String a = "()";
         String b = "{}";
         String c = "[]";
+        String d = "[](){}";
         String e = "[)";
         boolean correct = true;
         boolean incorrect = false;
@@ -19,5 +20,6 @@ class ParenthesesTest {
         Assertions.assertEquals(correct, parentheses.isValid(b));
         Assertions.assertEquals(correct, parentheses.isValid(c));
         Assertions.assertEquals(incorrect, parentheses.isValid(e));
+        Assertions.assertEquals(correct, parentheses.isValid(d));
     }
 }

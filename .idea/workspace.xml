@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Commit Fizz.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" afterDir="false" />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="First code dosent work with the three brackets at the same time.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681977565173</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="First code dosent work with the three brackets at the same time.">
+      <created>1681985446843</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1681985446843</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +294,8 @@
     <MESSAGE value="Create class Reverse and ReverseTest with code." />
     <MESSAGE value="Create class Fizz and FizzTest with code." />
     <MESSAGE value="Commit Fizz." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Fizz." />
+    <MESSAGE value="First code dosent work with the three brackets at the same time." />
+    <option name="LAST_COMMIT_MESSAGE" value="First code dosent work with the three brackets at the same time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
