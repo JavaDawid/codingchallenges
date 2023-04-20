@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create class Reverse and ReverseTest with code.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz/Fizz.java" afterDir="false" />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Commit Fizz.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -58,14 +59,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode.validParentheses20" />
       <recent name="leetcode.fizzBuzz412" />
       <recent name="leetcode.reverseString" />
       <recent name="leetcode.ReverseString" />
       <recent name="leetcode.firstUniqeCharacter387" />
-      <recent name="leetcode.two.sum1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FizzTest">
+  <component name="RunManager" selected="JUnit.ParenthesesTest">
     <configuration name="FizzApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzApp" />
       <module name="codingchallenges" />
@@ -110,45 +111,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseTest.shouldReverseString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParenthesesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.reverseString.*" />
+          <option name="PATTERN" value="leetcode.validParentheses20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.reverseString" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.reverseString.ReverseTest" />
-      <option name="METHOD_NAME" value="shouldReverseString" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="leetcode.validParentheses20" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.validParentheses20.ParenthesesTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode.palidrome9" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ParenthesesTest.shouldValidParentheses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.palidrome9.*" />
+          <option name="PATTERN" value="leetcode.validParentheses20.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.palidrome9" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="leetcode.validParentheses20" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.validParentheses20.ParenthesesTest" />
+      <option name="METHOD_NAME" value="shouldValidParentheses" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParenthesesTest" />
+        <item itemvalue="JUnit.ParenthesesTest.shouldValidParentheses" />
         <item itemvalue="JUnit.FizzTest" />
         <item itemvalue="Application.FizzApp" />
         <item itemvalue="JUnit.FizzTest.shouldReturnFizz" />
-        <item itemvalue="TestNG.leetcode.palidrome9" />
-        <item itemvalue="JUnit.ReverseTest.shouldReverseString" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +252,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="412" />
+                        <option value="20" />
                       </list>
                     </value>
                   </entry>
@@ -285,7 +285,9 @@
     <MESSAGE value="Create package,class Sum,SumApp and create test class." />
     <MESSAGE value="Create Character class and CharacterTest class." />
     <MESSAGE value="Create class Reverse and ReverseTest with code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create class Reverse and ReverseTest with code." />
+    <MESSAGE value="Create class Fizz and FizzTest with code." />
+    <MESSAGE value="Commit Fizz." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Fizz." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
