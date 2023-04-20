@@ -160,6 +160,7 @@
       <workItem from="1681739731643" duration="789000" />
       <workItem from="1681889305384" duration="7350000" />
       <workItem from="1681900055592" duration="9548000" />
+      <workItem from="1681976452977" duration="779000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -217,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681889817407</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Create class Reverse and ReverseTest with code.">
+      <created>1681976540501</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681976540501</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
