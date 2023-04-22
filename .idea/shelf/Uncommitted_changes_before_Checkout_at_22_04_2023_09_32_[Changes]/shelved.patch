@@ -1,0 +1,73 @@
+Index: src/main/java/leetcode/palidrome9/Palindrome.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package leetcode.palidrome9;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class Palindrome {\r\n    public int takeDigitFromUser() {\r\n        Scanner scanner = new Scanner(System.in);\r\n        System.out.println(\"Podaj liczbę do sprawdzenia czy jest polindromem\");\r\n        return scanner.nextInt();\r\n    }\r\n\r\n    public boolean isPalindrome(int x) {\r\n        if (x < 0)\r\n            return false;\r\n        int original = x;\r\n        int reversed = 0;\r\n        while (x > 0) {\r\n            int digit = x % 10;\r\n            reversed = reversed * 10 + digit;\r\n            x /= 10;\r\n        }\r\n        return original == reversed;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/palidrome9/Palindrome.java b/src/main/java/leetcode/palidrome9/Palindrome.java
+--- a/src/main/java/leetcode/palidrome9/Palindrome.java	(revision 715794b65b53282e9cadc0d89f390b79ddc88f2c)
++++ b/src/main/java/leetcode/palidrome9/Palindrome.java	(date 1682012927775)
+@@ -10,8 +10,9 @@
+     }
+ 
+     public boolean isPalindrome(int x) {
+-        if (x < 0)
++        if (x < 0) {
+             return false;
++        }
+         int original = x;
+         int reversed = 0;
+         while (x > 0) {
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n  xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n  <modelVersion>4.0.0</modelVersion>\r\n\r\n  <groupId>codingchallenges</groupId>\r\n  <artifactId>codingchallenges</artifactId>\r\n  <version>1.0-SNAPSHOT</version>\r\n\r\n  <name>codingchallenges</name>\r\n  <!-- FIXME change it to the project's website -->\r\n  <url>http://www.example.com</url>\r\n\r\n  <properties>\r\n    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    <maven.compiler.source>1.7</maven.compiler.source>\r\n    <maven.compiler.target>1.7</maven.compiler.target>\r\n  </properties>\r\n\r\n  <dependencies>\r\n    <dependency>\r\n      <groupId>org.junit.jupiter</groupId>\r\n      <artifactId>junit-jupiter-engine</artifactId>\r\n      <version>5.9.2</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>org.testng</groupId>\r\n      <artifactId>testng</artifactId>\r\n      <version>RELEASE</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n    <dependency>\r\n      <groupId>junit</groupId>\r\n      <artifactId>junit</artifactId>\r\n      <version>RELEASE</version>\r\n      <scope>test</scope>\r\n    </dependency>\r\n  </dependencies>\r\n\r\n  <build>\r\n    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->\r\n      <plugins>\r\n        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->\r\n        <plugin>\r\n          <artifactId>maven-clean-plugin</artifactId>\r\n          <version>3.1.0</version>\r\n        </plugin>\r\n        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->\r\n        <plugin>\r\n          <artifactId>maven-resources-plugin</artifactId>\r\n          <version>3.0.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-compiler-plugin</artifactId>\r\n          <version>3.8.0</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-surefire-plugin</artifactId>\r\n          <version>2.22.1</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-jar-plugin</artifactId>\r\n          <version>3.0.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-install-plugin</artifactId>\r\n          <version>2.5.2</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-deploy-plugin</artifactId>\r\n          <version>2.8.2</version>\r\n        </plugin>\r\n        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->\r\n        <plugin>\r\n          <artifactId>maven-site-plugin</artifactId>\r\n          <version>3.7.1</version>\r\n        </plugin>\r\n        <plugin>\r\n          <artifactId>maven-project-info-reports-plugin</artifactId>\r\n          <version>3.0.0</version>\r\n        </plugin>\r\n      </plugins>\r\n    </pluginManagement>\r\n  </build>\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision 715794b65b53282e9cadc0d89f390b79ddc88f2c)
++++ b/pom.xml	(date 1682012927747)
+@@ -19,24 +19,7 @@
+   </properties>
+ 
+   <dependencies>
+-    <dependency>
+-      <groupId>org.junit.jupiter</groupId>
+-      <artifactId>junit-jupiter-engine</artifactId>
+-      <version>5.9.2</version>
+-      <scope>test</scope>
+-    </dependency>
+-    <dependency>
+-      <groupId>org.testng</groupId>
+-      <artifactId>testng</artifactId>
+-      <version>RELEASE</version>
+-      <scope>test</scope>
+-    </dependency>
+-    <dependency>
+-      <groupId>junit</groupId>
+-      <artifactId>junit</artifactId>
+-      <version>RELEASE</version>
+-      <scope>test</scope>
+-    </dependency>
++//dodać dependencies
+   </dependencies>
+ 
+   <build>
+Index: src/main/java/leetcode/fizzBuzz412/Fizz.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package leetcode.fizzBuzz412;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Fizz {\r\n    public List<String> fizzBuzz(int n) {\r\n        List<String> lists = new ArrayList<>();\r\n        for (int i = 1; i <= n; i++) {\r\n            if ((i % 3 == 0) && (i % 5 == 0)) {\r\n                lists.add(\"FizzBuzz\");\r\n            } else if ((i % 3 == 0) || (i % 5 == 0)) {\r\n                if (i % 3 == 0) {\r\n                    lists.add(\"Fizz\");\r\n                } else if (i % 5 == 0) {\r\n                    lists.add(\"Buzz\");\r\n                }\r\n            } else {\r\n                lists.add(String.valueOf(i));\r\n            }\r\n        }\r\n        return lists;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/fizzBuzz412/Fizz.java b/src/main/java/leetcode/fizzBuzz412/Fizz.java
+--- a/src/main/java/leetcode/fizzBuzz412/Fizz.java	(revision 715794b65b53282e9cadc0d89f390b79ddc88f2c)
++++ b/src/main/java/leetcode/fizzBuzz412/Fizz.java	(date 1682012322165)
+@@ -1,5 +1,4 @@
+ package leetcode.fizzBuzz412;
+-
+ import java.util.ArrayList;
+ import java.util.List;
+ 

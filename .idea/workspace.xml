@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="First code dosent work with the three brackets at the same time.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" afterDir="false" />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Create package,class Sum,SumApp and create test class.">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz412/Fizz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz412/Fizz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/palidrome9/Palindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -164,6 +164,8 @@
       <workItem from="1681889305384" duration="7350000" />
       <workItem from="1681900055592" duration="9548000" />
       <workItem from="1681976452977" duration="4507000" />
+      <workItem from="1682111339422" duration="3000" />
+      <workItem from="1682148416992" duration="351000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -242,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681985446843</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Create package,class Sum,SumApp and create test class.">
+      <created>1682011482635</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682011482635</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +268,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="20" />
+                        <option value="1" />
                       </list>
                     </value>
                   </entry>
@@ -289,13 +298,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes." />
     <MESSAGE value="Create class Anagram and test class AnagramTest." />
-    <MESSAGE value="Create package,class Sum,SumApp and create test class." />
     <MESSAGE value="Create Character class and CharacterTest class." />
     <MESSAGE value="Create class Reverse and ReverseTest with code." />
     <MESSAGE value="Create class Fizz and FizzTest with code." />
     <MESSAGE value="Commit Fizz." />
     <MESSAGE value="First code dosent work with the three brackets at the same time." />
-    <option name="LAST_COMMIT_MESSAGE" value="First code dosent work with the three brackets at the same time." />
+    <MESSAGE value="Corrected code. All functions work." />
+    <MESSAGE value="Create package,class Sum,SumApp and create test class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create package,class Sum,SumApp and create test class." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

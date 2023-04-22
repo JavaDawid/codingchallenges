@@ -1,0 +1,185 @@
+Index: src/test/java/leetcode/sort451/SortTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/leetcode/sort451/SortTest.java b/src/test/java/leetcode/sort451/SortTest.java
+new file mode 100644
+--- /dev/null	(date 1682011013471)
++++ b/src/test/java/leetcode/sort451/SortTest.java	(date 1682011013471)
+@@ -0,0 +1,14 @@
++package leetcode.sort451;
++
++import org.junit.jupiter.api.Test;
++
++class SortTest {
++    @Test
++    public void shouldSortString() {
++        Sort sort = new Sort();
++
++        String word1 = "tree";
++        String word2 = "cccaaa";
++        String word3 = "Aabb";
++    }
++}
+\ No newline at end of file
+Index: src/main/java/leetcode/sort451/SortTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/sort451/SortTest.java b/src/main/java/leetcode/sort451/SortTest.java
+new file mode 100644
+--- /dev/null	(date 1681996990810)
++++ b/src/main/java/leetcode/sort451/SortTest.java	(date 1681996990810)
+@@ -0,0 +1,8 @@
++package leetcode.sort451;
++
++public class SortTest {
++    public static void main(String[] args) {
++        Sort sort = new Sort();
++        sort.frequencySort("tree");
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b3e1a00c-c2bc-4043-a989-c089c5dab07d\" name=\"Changes\" comment=\"First code dosent work with the three brackets at the same time.\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"JUnit5 Test Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2OYZyMhELmRAIrrGiTyAw5F4DSB\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateClassDialog.RecentsKey\">\r\n      <recent name=\"leetcode.two.sum1\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"leetcode.validParentheses20\" />\r\n      <recent name=\"leetcode.fizzBuzz412\" />\r\n      <recent name=\"leetcode.reverseString\" />\r\n      <recent name=\"leetcode.ReverseString\" />\r\n      <recent name=\"leetcode.firstUniqeCharacter387\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"JUnit.ParenthesesTest\">\r\n    <configuration name=\"FizzApp\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"leetcode.fizzBuzz412.FizzApp\" />\r\n      <module name=\"codingchallenges\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"leetcode.fizzBuzz412.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"FizzTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"codingchallenges\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"leetcode.fizzBuzz412.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"leetcode.fizzBuzz412\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"leetcode.fizzBuzz412.FizzTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"FizzTest.shouldReturnFizz\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"codingchallenges\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"leetcode.fizzBuzz412.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"leetcode.fizzBuzz412\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"leetcode.fizzBuzz412.FizzTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldReturnFizz\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ParenthesesTest\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"codingchallenges\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"leetcode.validParentheses20.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"leetcode.validParentheses20\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"leetcode.validParentheses20.ParenthesesTest\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ParenthesesTest.shouldValidParentheses\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"codingchallenges\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"leetcode.validParentheses20.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"leetcode.validParentheses20\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"leetcode.validParentheses20.ParenthesesTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"shouldValidParentheses\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.ParenthesesTest\" />\r\n        <item itemvalue=\"JUnit.ParenthesesTest.shouldValidParentheses\" />\r\n        <item itemvalue=\"JUnit.FizzTest\" />\r\n        <item itemvalue=\"Application.FizzApp\" />\r\n        <item itemvalue=\"JUnit.FizzTest.shouldReturnFizz\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b3e1a00c-c2bc-4043-a989-c089c5dab07d\" name=\"Changes\" comment=\"\" />\r\n      <created>1681739729678</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1681739729678</updated>\r\n      <workItem from=\"1681739731643\" duration=\"789000\" />\r\n      <workItem from=\"1681889305384\" duration=\"7350000\" />\r\n      <workItem from=\"1681900055592\" duration=\"9548000\" />\r\n      <workItem from=\"1681976452977\" duration=\"4507000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Changes.\">\r\n      <created>1681805885728</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681805885728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Changes.\">\r\n      <created>1681806377451</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681806377451</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Changes.\">\r\n      <created>1681807745185</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681807745185</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Changes.\">\r\n      <created>1681808106400</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681808106400</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Create class Anagram and test class AnagramTest.\">\r\n      <created>1681816766289</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681816766289</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Create package,class Sum,SumApp and create test class.\">\r\n      <created>1681827646543</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681827646543</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Create package,class Sum,SumApp and create test class.\">\r\n      <created>1681841031541</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681841031541</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Create Character class and CharacterTest class.\">\r\n      <created>1681889817407</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681889817407</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Create class Reverse and ReverseTest with code.\">\r\n      <created>1681976540501</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681976540501</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Create class Reverse and ReverseTest with code.\">\r\n      <created>1681977565173</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681977565173</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"First code dosent work with the three brackets at the same time.\">\r\n      <created>1681985446843</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1681985446843</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"20\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"User\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"*\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Changes.\" />\r\n    <MESSAGE value=\"Create class Anagram and test class AnagramTest.\" />\r\n    <MESSAGE value=\"Create package,class Sum,SumApp and create test class.\" />\r\n    <MESSAGE value=\"Create Character class and CharacterTest class.\" />\r\n    <MESSAGE value=\"Create class Reverse and ReverseTest with code.\" />\r\n    <MESSAGE value=\"Create class Fizz and FizzTest with code.\" />\r\n    <MESSAGE value=\"Commit Fizz.\" />\r\n    <MESSAGE value=\"First code dosent work with the three brackets at the same time.\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"First code dosent work with the three brackets at the same time.\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-method\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/leetcode/two/sum1/Sum.java</url>\r\n          <line>6</line>\r\n          <properties class=\"leetcode.two.sum1.Sum\" method=\"twoSum\">\r\n            <option name=\"EMULATED\" value=\"true\" />\r\n            <option name=\"WATCH_EXIT\" value=\"false\" />\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"3\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/leetcode/two/sum1/SumApp.java</url>\r\n          <line>4</line>\r\n          <option name=\"timeStamp\" value=\"4\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java</url>\r\n          <line>6</line>\r\n          <option name=\"timeStamp\" value=\"7\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java</url>\r\n          <line>10</line>\r\n          <option name=\"timeStamp\" value=\"8\" />\r\n        </line-breakpoint>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java</url>\r\n          <line>22</line>\r\n          <option name=\"timeStamp\" value=\"9\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/codingchallenges$FizzTest.ic\" NAME=\"FizzTest Coverage Results\" MODIFIED=\"1681979717426\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>leetcode.fizzBuzz412.*</FILTER>\r\n    </SUITE>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2ec56fd8cdbdeae7ae342ab3c567ff932bb981d3)
++++ b/.idea/workspace.xml	(date 1682011013939)
+@@ -4,10 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="First code dosent work with the three brackets at the same time.">
++    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Corrected code. All functions work.">
++      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/sort451/Sort.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/sort451/SortTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/sort451/SortTest.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -17,8 +18,8 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="Class" />
+         <option value="JUnit5 Test Class" />
++        <option value="Class" />
+       </list>
+     </option>
+   </component>
+@@ -59,14 +60,14 @@
+       <recent name="" />
+     </key>
+     <key name="CreateTestDialog.RecentsKey">
++      <recent name="leetcode.sort451" />
+       <recent name="leetcode.validParentheses20" />
+       <recent name="leetcode.fizzBuzz412" />
+       <recent name="leetcode.reverseString" />
+       <recent name="leetcode.ReverseString" />
+-      <recent name="leetcode.firstUniqeCharacter387" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="JUnit.ParenthesesTest">
++  <component name="RunManager" selected="Application.SortTest">
+     <configuration name="FizzApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzApp" />
+       <module name="codingchallenges" />
+@@ -80,22 +81,20 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="FizzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="SortTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="leetcode.sort451.SortTest" />
+       <module name="codingchallenges" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
++          <option name="PATTERN" value="leetcode.sort451.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
+-      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
+-      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="FizzTest.shouldReturnFizz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++    <configuration name="FizzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="codingchallenges" />
+       <extension name="coverage">
+         <pattern>
+@@ -105,8 +104,7 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
+       <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
+-      <option name="METHOD_NAME" value="shouldReturnFizz" />
+-      <option name="TEST_OBJECT" value="method" />
++      <option name="TEST_OBJECT" value="class" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -144,11 +142,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.SortTest" />
+         <item itemvalue="JUnit.ParenthesesTest" />
+         <item itemvalue="JUnit.ParenthesesTest.shouldValidParentheses" />
+         <item itemvalue="JUnit.FizzTest" />
+         <item itemvalue="Application.FizzApp" />
+-        <item itemvalue="JUnit.FizzTest.shouldReturnFizz" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -164,6 +162,7 @@
+       <workItem from="1681889305384" duration="7350000" />
+       <workItem from="1681900055592" duration="9548000" />
+       <workItem from="1681976452977" duration="4507000" />
++      <workItem from="1682010559794" duration="454000" />
+     </task>
+     <task id="LOCAL-00001" summary="Changes.">
+       <created>1681805885728</created>
+@@ -259,7 +258,7 @@
+                   <entry key="branch">
+                     <value>
+                       <list>
+-                        <option value="20" />
++                        <option value="451" />
+                       </list>
+                     </value>
+                   </entry>
+Index: src/main/java/leetcode/sort451/Sort.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/leetcode/sort451/Sort.java b/src/main/java/leetcode/sort451/Sort.java
+new file mode 100644
+--- /dev/null	(date 1682011013441)
++++ b/src/main/java/leetcode/sort451/Sort.java	(date 1682011013441)
+@@ -0,0 +1,13 @@
++package leetcode.sort451;
++
++import java.util.HashMap;
++import java.util.Map;
++
++public class Sort {
++    public void frequencySort(String s) {
++        Map<Integer, String> sort = new HashMap<>();
++        for (char c : s.toCharArray()) {
++            sort.getOrDefault()
++        }
++    }
++}
