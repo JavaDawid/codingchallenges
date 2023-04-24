@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="First code dosent work with the three brackets at the same time.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_04_2023_19_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_04_2023_19_18__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2023_09_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2023_09_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Modification.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/increase/Increase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/increase/IncreaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,20 +59,20 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode.increase" />
       <recent name="leetcode.validParentheses20" />
       <recent name="leetcode.fizzBuzz412" />
       <recent name="leetcode.reverseString" />
       <recent name="leetcode.ReverseString" />
-      <recent name="leetcode.firstUniqeCharacter387" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParenthesesTest">
-    <configuration name="FizzApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzApp" />
+  <component name="RunManager" selected="JUnit.IncreaseTest">
+    <configuration name="Increase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.increase.Increase" />
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="PATTERN" value="leetcode.increase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,18 +95,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzTest.shouldReturnFizz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IncreaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="PATTERN" value="leetcode.increase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
-      <option name="METHOD_NAME" value="shouldReturnFizz" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="leetcode.increase" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.increase.IncreaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IncreaseTest" />
+        <item itemvalue="Application.Increase" />
         <item itemvalue="JUnit.ParenthesesTest" />
         <item itemvalue="JUnit.ParenthesesTest.shouldValidParentheses" />
         <item itemvalue="JUnit.FizzTest" />
-        <item itemvalue="Application.FizzApp" />
-        <item itemvalue="JUnit.FizzTest.shouldReturnFizz" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681985446843</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Modification.">
+      <created>1682328454208</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682328454208</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +301,8 @@
     <MESSAGE value="Create class Fizz and FizzTest with code." />
     <MESSAGE value="Commit Fizz." />
     <MESSAGE value="First code dosent work with the three brackets at the same time." />
-    <option name="LAST_COMMIT_MESSAGE" value="First code dosent work with the three brackets at the same time." />
+    <MESSAGE value="Modification." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
