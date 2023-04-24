@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="First code dosent work with the three brackets at the same time.">
+    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Remove .idea folder from tracking">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/sortcharacter451/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/sortcharacter451/SortCharacters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/sortcharacter451/SortCharactersTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/validParentheses20/Parentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/validParentheses20/ParenthesesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,20 +61,20 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode.sortcharacter451" />
       <recent name="leetcode.validParentheses20" />
       <recent name="leetcode.fizzBuzz412" />
       <recent name="leetcode.reverseString" />
       <recent name="leetcode.ReverseString" />
-      <recent name="leetcode.firstUniqeCharacter387" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParenthesesTest">
-    <configuration name="FizzApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzApp" />
+  <component name="RunManager" selected="JUnit.SortCharactersTest.shouldCountLettersAtWords">
+    <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.sortcharacter451.AppTest" />
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="PATTERN" value="leetcode.sortcharacter451.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,22 +93,6 @@
       <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
       <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FizzTest.shouldReturnFizz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
-      <option name="METHOD_NAME" value="shouldReturnFizz" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,13 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortCharactersTest.shouldCountLettersAtWords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.sortcharacter451.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.sortcharacter451" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.sortcharacter451.SortCharactersTest" />
+      <option name="METHOD_NAME" value="shouldCountLettersAtWords" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParenthesesTest" />
+        <item itemvalue="JUnit.SortCharactersTest.shouldCountLettersAtWords" />
+        <item itemvalue="Application.AppTest" />
         <item itemvalue="JUnit.ParenthesesTest.shouldValidParentheses" />
+        <item itemvalue="JUnit.ParenthesesTest" />
         <item itemvalue="JUnit.FizzTest" />
-        <item itemvalue="Application.FizzApp" />
-        <item itemvalue="JUnit.FizzTest.shouldReturnFizz" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +166,7 @@
       <workItem from="1681889305384" duration="7350000" />
       <workItem from="1681900055592" duration="9548000" />
       <workItem from="1681976452977" duration="4507000" />
+      <workItem from="1682326316974" duration="1656000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -328,6 +331,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/sortcharacter451/AppTest.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
