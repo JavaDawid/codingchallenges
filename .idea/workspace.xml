@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Change at workspace.xml.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/largeelement/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/largeelement/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/largeelement/ElementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/longestCommonPrefix/Prefix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/leetcode/longestCommonPrefix/PrefixTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_04_2023_19_18_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_04_2023_19_18__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -60,27 +61,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="leetcode.longestCommonPrefix" />
+      <recent name="leetcode.longestcommonprefix" />
       <recent name="leetcode.largeelement" />
       <recent name="leetcode.fibonacci" />
       <recent name="leetcode.increase" />
-      <recent name="leetcode.validParentheses20" />
-      <recent name="leetcode.fizzBuzz412" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ElementTest.shouldGiveSecondLargestElement">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.fibonacci.Test" />
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.fibonacci.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PrefixTest.shouldReturnPrefix">
     <configuration name="leetcode.largeelement.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.largeelement.Test" />
       <module name="codingchallenges" />
@@ -140,13 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrefixTest.shouldReturnPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.longestCommonPrefix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.longestCommonPrefix" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.longestCommonPrefix.PrefixTest" />
+      <option name="METHOD_NAME" value="shouldReturnPrefix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrefixTest.shouldReturnPrefix" />
         <item itemvalue="JUnit.ElementTest.shouldGiveSecondLargestElement" />
         <item itemvalue="JUnit.ElementTest" />
         <item itemvalue="Application.leetcode.largeelement.Test" />
         <item itemvalue="JUnit.FibonacciTest" />
-        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +167,10 @@
       <workItem from="1681900055592" duration="9548000" />
       <workItem from="1681976452977" duration="4507000" />
       <workItem from="1682493153656" duration="5706000" />
+      <workItem from="1682504816147" duration="885000" />
+      <workItem from="1682505713144" duration="2513000" />
+      <workItem from="1682514845494" duration="1653000" />
+      <workItem from="1682668361731" duration="1121000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -272,7 +280,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="secondLargeElement" />
+                        <option value="prefix14" />
                       </list>
                     </value>
                   </entry>
@@ -353,6 +361,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/leetcode/largeelement/ElementTest.java</url>
           <line>10</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetcode/longestCommonPrefix/PrefixTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
