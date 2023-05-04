@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="Delete .idea">
+    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create class Anagram and test class AnagramTest.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2023_10_09__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2023_10_09__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2023_10_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_04_2023_10_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_04_2023_10_11__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_04_2023_10_11__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2023_09_32_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2023_09_32__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/codingchallenges/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codingchallenges/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,15 +21,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +70,7 @@
       <recent name="leetcode.ReverseString" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.IncreaseTest">
+  <component name="RunManager" selected="JUnit.PrefixTest.shouldReturnPrefix">
     <configuration name="Increase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.increase.Increase" />
       <module name="codingchallenges" />
@@ -81,17 +84,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PalindromeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.palidrome9.PalindromeApp" />
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="PATTERN" value="leetcode.palidrome9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,17 +127,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParenthesesTest.shouldValidParentheses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrefixTest.shouldReturnPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.validParentheses20.*" />
+          <option name="PATTERN" value="leetcode.longestCommonPrefix.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.validParentheses20" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.validParentheses20.ParenthesesTest" />
-      <option name="METHOD_NAME" value="shouldValidParentheses" />
+      <option name="PACKAGE_NAME" value="leetcode.longestCommonPrefix" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.longestCommonPrefix.PrefixTest" />
+      <option name="METHOD_NAME" value="shouldReturnPrefix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,18 +145,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrefixTest.shouldReturnPrefix" />
+        <item itemvalue="Application.PalindromeApp" />
         <item itemvalue="JUnit.IncreaseTest" />
         <item itemvalue="Application.Increase" />
         <item itemvalue="JUnit.ParenthesesTest" />
-        <item itemvalue="JUnit.ParenthesesTest.shouldValidParentheses" />
-        <item itemvalue="JUnit.FizzTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b3e1a00c-c2bc-4043-a989-c089c5dab07d" name="Changes" comment="" />
+      <changelist id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create class Anagram and test class AnagramTest." />
       <created>1681739729678</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -164,6 +165,9 @@
       <workItem from="1681889305384" duration="7350000" />
       <workItem from="1681900055592" duration="9548000" />
       <workItem from="1681976452977" duration="4507000" />
+      <workItem from="1682716094926" duration="19000" />
+      <workItem from="1682716302259" duration="253000" />
+      <workItem from="1683099412794" duration="5103000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -266,7 +270,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="20" />
+                        <option value="help" />
                       </list>
                     </value>
                   </entry>
@@ -337,10 +341,28 @@
           <line>22</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/longestCommonPrefix/Prefix.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetcode/longestCommonPrefix/PrefixTest.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetcode/longestCommonPrefix/PrefixTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/codingchallenges$ElementTest_shouldGiveSecondLargestElement.ic" NAME="ElementTest.shouldGiveSecondLargestElement Coverage Results" MODIFIED="1682503959192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.largeelement.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/codingchallenges$FizzTest.ic" NAME="FizzTest Coverage Results" MODIFIED="1681979717426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>leetcode.fizzBuzz412.*</FILTER>
     </SUITE>
