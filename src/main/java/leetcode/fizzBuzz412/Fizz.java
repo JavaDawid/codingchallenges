@@ -6,6 +6,7 @@ public class Fizz {
     public List<String> fizzBuzz(int n) {
         List<String> lists = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
+            //Note: wyciagnalbym logike ustlaania jaka wartosc zostanei dodana do oddzielnej fukncji tka zbey bylo lists.add(getFizzBuzzValue(number))
             if ((i % 3 == 0) && (i % 5 == 0)) {
                 lists.add("FizzBuzz");
             } else if ((i % 3 == 0) || (i % 5 == 0)) {

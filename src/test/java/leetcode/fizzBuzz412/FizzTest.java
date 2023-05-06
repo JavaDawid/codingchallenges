@@ -41,6 +41,10 @@ class FizzTest {
     public void shouldReturnFizzBuzz() {
         Fizz fizz = new Fizz();
         int a = 15;
+        //Note:
+        // 1. Zostawilbym tylko ten test, ustawil a = 16.
+        // 2. Zamiast result.add. zrobilbym result.addAll(List.of(1, 2, Fizz))
+        // lub wreczy wygenerowal liste liczb 1-16 i popodmienial elementy liscie na Fizz, Buzz i Fizzbuzz
         result.add("1");
         result.add("2");
         result.add("Fizz");
@@ -56,6 +60,7 @@ class FizzTest {
         result.add("13");
         result.add("14");
         result.add("FizzBuzz");
+        //Note: fizz.fizzBuzz(a) - zrob to w sekcki 'when'
         Assertions.assertEquals(result, fizz.fizzBuzz(a));
     }
 

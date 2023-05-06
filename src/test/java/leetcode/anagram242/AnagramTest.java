@@ -14,6 +14,7 @@ class AnagramTest {
         boolean anagram1 = anagram.isAnagram("anagram", "nagaram");
         boolean anagram2 = anagram.isAnagram("rat", "car");
         //then
+        //Note: Use: Assertions.assertTrue
         Assertions.assertEquals(true, anagram1);
         Assertions.assertEquals(false, anagram2);
     }

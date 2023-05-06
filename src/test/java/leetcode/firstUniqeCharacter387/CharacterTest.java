@@ -8,6 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class CharacterTest {
     @Test
     public void shouldReturnFirstUniqChar() {
+
+        //Note: Nie rozumiesz given, when, then
+        // given - tworzenie inputow i (w zaleznosci od ustalen projektu) spodziewanych outputow
+        // when - wywolanie funkcji (tylko!)
+        // then - assercje
+
+
         //given
         Character character = new Character();
 

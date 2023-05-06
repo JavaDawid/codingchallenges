@@ -13,6 +13,7 @@ class ParenthesesTest {
         String c = "[]";
         String d = "[](){}";
         String e = "[)";
+        //Note: Zrobilbym inline na correct, incorret. Te zmienne nic nie wnosza.
         boolean correct = true;
         boolean incorrect = false;
 

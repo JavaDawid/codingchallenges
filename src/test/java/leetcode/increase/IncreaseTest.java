@@ -11,6 +11,7 @@ class IncreaseTest {
         int zero = 0;
         int result = 70;
         Increase increase = new Increase();
+        //Note: formatting spacje po przeicnkach
         Assertions.assertEquals(result,increase.increase(numberA,numberB,zero));
     }
 
