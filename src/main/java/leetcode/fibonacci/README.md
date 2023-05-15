@@ -1,6 +1,6 @@
 # FIBONACCI #
 
-This project contains a simple implementation of a *Fibonacci Sequence Generator* in Java, along with it corresponding unit tests using the JUnit 5 framework.
+This project contains a simple implementation of a *Fibonacci Sequence Generator* in Java, along with corresponding unit tests.
 
  #### **DESCRIPTION** ####
  
