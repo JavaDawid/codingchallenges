@@ -16,15 +16,10 @@ The tasks of the program is return **true** if both string
 
 Here is a basic example of how to use the **Anagram** class:
        
-        @Test
-        public void shouldCheckThatWordIsAnagram() {
-        Anagram anagram = new Anagram();
-        
-        String correctWord = "anagram";
-        String rearrangingWord = "nagaram";
-        
-        anagram.isAnagram(correctWord, rearrangingWord);
-        
-        Assertions.assertTrue(true);
-    }
+   public static void main(String[] args) {
+    Anagram anagramChecker = new Anagram();
+    boolean result = anagramChecker.isAnagram("listen", "silent");
+    System.out.println(result);  // prints: true
+}
+
 In this example, "nagaram" is an anagram of "anagram", so the isAnagram method returns true.
