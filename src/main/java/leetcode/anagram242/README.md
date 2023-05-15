@@ -46,4 +46,4 @@ Here is a basic example of a test:
 
 #### **DEPENDENCIS** ####
 
-- JUnit 5.9.2
+- JUnit Jupiter (org.junit.jupiter:junit-jupiter-engine:5.9.2) for testing.
