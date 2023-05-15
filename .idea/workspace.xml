@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Character extract create alphabet to single method. CharacterTest modification //given //when //then.">
+    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create ScannerWrapper.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz412/Fizz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz412/Fizz.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -39,7 +44,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
-    &quot;keyToString&quot;: {
+  &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -47,56 +52,29 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
-    }
-    }</component>
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="TicTacToe" />
       <recent name="leetcode.two.sum1" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="TicTacToe" />
       <recent name="leetcode.increase" />
       <recent name="leetcode.validParentheses20" />
       <recent name="leetcode.fizzBuzz412" />
       <recent name="leetcode.reverseString" />
-      <recent name="leetcode.ReverseString" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CharacterTest.shouldReturnFirstUniqChar">
-    <configuration name="AnagramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.anagram242.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.anagram242" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.anagram242.AnagramTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnagramTest.shouldCheckThatWordIsAnagram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.anagram242.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.anagram242" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.anagram242.AnagramTest" />
-      <option name="METHOD_NAME" value="shouldCheckThatWordIsAnagram" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FizzTest">
     <configuration name="CharacterTest.shouldReturnFirstUniqChar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
@@ -144,13 +122,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FizzTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FizzTest.shouldReturnFizz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
+      <option name="METHOD_NAME" value="shouldReturnFizz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
-        <item itemvalue="JUnit.FibonacciTest" />
+        <item itemvalue="JUnit.FizzTest" />
+        <item itemvalue="JUnit.FizzTest.shouldReturnFizz" />
         <item itemvalue="JUnit.FibonacciTest.shouldTestFibonacci" />
-        <item itemvalue="JUnit.AnagramTest.shouldCheckThatWordIsAnagram" />
-        <item itemvalue="JUnit.AnagramTest" />
+        <item itemvalue="JUnit.FibonacciTest" />
+        <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
       </list>
     </recent_temporary>
   </component>
@@ -168,8 +177,11 @@
       <workItem from="1681976452977" duration="4507000" />
       <workItem from="1682716094926" duration="19000" />
       <workItem from="1682716302259" duration="253000" />
-      <workItem from="1683099412794" duration="5103000" />
-      <workItem from="1684141645738" duration="8623000" />
+      <workItem from="1683099412794" duration="9036000" />
+      <workItem from="1683356359167" duration="11738000" />
+      <workItem from="1683568188531" duration="6533000" />
+      <workItem from="1683616700530" duration="33929000" />
+      <workItem from="1683791130881" duration="16581000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -255,28 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682328454208</updated>
     </task>
-    <task id="LOCAL-00013" summary="AnagramTest modification test code.">
-      <created>1684146668148</created>
+    <task id="LOCAL-00013" summary="Modification.">
+      <created>1683219158771</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1684146668148</updated>
+      <updated>1683219158771</updated>
     </task>
-    <task id="LOCAL-00014" summary="FibonacciTest modification test code.">
-      <created>1684146692832</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1684146692832</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Character extract create alphabet to single method. CharacterTest modification //given //when //then.">
-      <created>1684150544066</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1684150544066</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +291,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="help" />
+                        <option value="TicTacToe" />
                       </list>
                     </value>
                   </entry>
@@ -330,10 +328,7 @@
     <MESSAGE value="Commit Fizz." />
     <MESSAGE value="First code dosent work with the three brackets at the same time." />
     <MESSAGE value="Modification." />
-    <MESSAGE value="AnagramTest modification test code." />
-    <MESSAGE value="FibonacciTest modification test code." />
-    <MESSAGE value="Character extract create alphabet to single method. CharacterTest modification //given //when //then." />
-    <option name="LAST_COMMIT_MESSAGE" value="Character extract create alphabet to single method. CharacterTest modification //given //when //then." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,6 +371,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java</url>
           <line>77</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetcode/fizzBuzz412/FizzTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetcode/fizzBuzz412/FizzTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
