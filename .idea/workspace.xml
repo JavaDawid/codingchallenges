@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create class Anagram and test class AnagramTest.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2023_09_32_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_04_2023_09_32__Changes_.xml" beforeDir="false" />
+    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create game TicTacToe and few test class. Project not complete.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/codingchallenges/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/codingchallenges/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/fibonacci/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/fibonacci/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/anagram242/AnagramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/anagram242/AnagramTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="1" />
+        <entry key="$PROJECT_DIR$" value="TicTacToe" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,59 +67,65 @@
       <recent name="leetcode.ReverseString" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrefixTest.shouldReturnPrefix">
-    <configuration name="Increase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.increase.Increase" />
+  <component name="RunManager" selected="JUnit.FibonacciTest">
+    <configuration name="AnagramTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.increase.*" />
+          <option name="PATTERN" value="leetcode.anagram242.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PalindromeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.palidrome9.PalindromeApp" />
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.palidrome9.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IncreaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.increase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.increase" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.increase.IncreaseTest" />
+      <option name="PACKAGE_NAME" value="leetcode.anagram242" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.anagram242.AnagramTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParenthesesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AnagramTest.shouldCheckThatWordIsAnagram" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="leetcode.validParentheses20.*" />
+          <option name="PATTERN" value="leetcode.anagram242.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="leetcode.validParentheses20" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.validParentheses20.ParenthesesTest" />
+      <option name="PACKAGE_NAME" value="leetcode.anagram242" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.anagram242.AnagramTest" />
+      <option name="METHOD_NAME" value="shouldCheckThatWordIsAnagram" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.fibonacci.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.fibonacci" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.fibonacci.FibonacciTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FibonacciTest.shouldTestFibonacci" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.fibonacci.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.fibonacci" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.fibonacci.FibonacciTest" />
+      <option name="METHOD_NAME" value="shouldTestFibonacci" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FibonacciTest" />
+        <item itemvalue="JUnit.FibonacciTest.shouldTestFibonacci" />
+        <item itemvalue="JUnit.AnagramTest.shouldCheckThatWordIsAnagram" />
+        <item itemvalue="JUnit.AnagramTest" />
         <item itemvalue="JUnit.PrefixTest.shouldReturnPrefix" />
-        <item itemvalue="Application.PalindromeApp" />
-        <item itemvalue="JUnit.IncreaseTest" />
-        <item itemvalue="Application.Increase" />
-        <item itemvalue="JUnit.ParenthesesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +171,7 @@
       <workItem from="1682716094926" duration="19000" />
       <workItem from="1682716302259" duration="253000" />
       <workItem from="1683099412794" duration="5103000" />
+      <workItem from="1684141645738" duration="3805000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -355,6 +359,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/leetcode/longestCommonPrefix/PrefixTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/fibonacci/Fibonacci.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
