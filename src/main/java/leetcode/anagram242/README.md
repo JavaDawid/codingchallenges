@@ -1,6 +1,6 @@
 # ANAGRAM #
 
- **DESCRIPTION**
+ #### **DESCRIPTION** ####
 
 This repository contains a simple Java program for checking if two words are anagrams. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
@@ -12,7 +12,7 @@ The tasks of the program is return **true** if both string
  and return **false** if 
  - both arguments are incorrect
 
- **USAGE**
+ #### **USAGE** ####
 
 Here is a basic example of how to use the **Anagram** class:
        
@@ -24,9 +24,10 @@ Here is a basic example of how to use the **Anagram** class:
 
 In this example, "nagaram" is an anagram of "anagram", so the isAnagram method returns true.
 
- **TESTING**
+ #### **TESTING** ####
 
 This project using Junit5 to testing. All tests are located in the ***scr/test/java/leetcode***. The **AnagramTest** class contains test for **Anagram**.
+The tests use the JUnit 5 **Assertions** class to check the result.
 Here is a basic example of a test:
 
     @Test
@@ -43,6 +44,6 @@ Here is a basic example of a test:
         Assertions.assertTrue(true);
     }
 
-**DEPENDENCIS**
+#### **DEPENDENCIS** ####
 
 - JUnit 5.9.2
