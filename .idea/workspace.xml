@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create game TicTacToe and few test class. Project not complete.">
+    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="FibonacciTest modification test code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/fibonacci/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/fibonacci/Fibonacci.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/anagram242/AnagramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/anagram242/AnagramTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,7 @@
       <workItem from="1682716094926" duration="19000" />
       <workItem from="1682716302259" duration="253000" />
       <workItem from="1683099412794" duration="5103000" />
-      <workItem from="1684141645738" duration="3805000" />
+      <workItem from="1684141645738" duration="6206000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -257,7 +256,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682328454208</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="AnagramTest modification test code.">
+      <created>1684146668148</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684146668148</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FibonacciTest modification test code.">
+      <created>1684146692832</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1684146692832</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +324,9 @@
     <MESSAGE value="Commit Fizz." />
     <MESSAGE value="First code dosent work with the three brackets at the same time." />
     <MESSAGE value="Modification." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification." />
+    <MESSAGE value="AnagramTest modification test code." />
+    <MESSAGE value="FibonacciTest modification test code." />
+    <option name="LAST_COMMIT_MESSAGE" value="FibonacciTest modification test code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -329,21 +344,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/two/sum1/SumApp.java</url>
           <line>4</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/leetcode/firstUniqeCharacter387/Character.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/leetcode/firstUniqeCharacter387/CharacterTest.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/longestCommonPrefix/Prefix.java</url>
@@ -367,7 +367,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java</url>
-          <line>37</line>
+          <line>77</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
