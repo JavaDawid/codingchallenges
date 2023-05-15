@@ -13,7 +13,7 @@ public class Character {
         return -1;
     }
 
-    private static int[] createAlphabet(String s) {
+    private int[] createAlphabet(String s) {
         int[] alphabet = new int[26];
         for (int i = 0; i < s.length(); i++) {
             alphabet[s.charAt(i) - 'a']++;
