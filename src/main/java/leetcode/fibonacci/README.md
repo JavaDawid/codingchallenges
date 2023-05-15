@@ -17,5 +17,10 @@ Here is a simple example how use the **Fibonacci** class
 #### **TESTING** ####
 
 This project also contains **FibonacciTest** class with include unit test for the **Fibonacci** class.
+All tests are located in the ***scr/test/java/leetcode***.
 Each test case in **FibonacciTest** class test the ***fib(int n)*** method with different values of **n** and checks that result is like expected.
 The tests use the JUnit 5 **Assertions** class to check the result.
+
+#### **DEPENDENCIES** ####
+
+- JUnit Jupiter (org.junit.jupiter:junit-jupiter-engine:5.9.2) for testing.
