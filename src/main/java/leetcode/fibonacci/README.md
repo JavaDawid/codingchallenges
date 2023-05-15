@@ -15,4 +15,7 @@ Here is a simple example how use the **Fibonacci** class
     int result = fibonacci.fib(5);  // result will be 5
 
 #### **TESTING** ####
-  
+
+This project also contains **FibonacciTest** class with include unit test for the **Fibonacci** class.
+Each test case in **FibonacciTest** class test the ***fib(int n)*** method with different values of **n** and checks that result is like expected.
+The tests use the JUnit 5 **Assertions** class to check the result.
