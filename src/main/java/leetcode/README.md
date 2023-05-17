@@ -33,3 +33,14 @@ Given an array of integers, task of program is to finds the second-largest eleme
 **Longest Common Prefix** find the longest common prefix from an array of strings.
 
 If there is no common prefix, return the empty string "".
+
+- palindrome9
+
+**Palindrome** it take an integer x and return x if is a palindrome and return false in otherwise. Palindrome it is a number or word that read from both ways, has the same meaning.
+
+- reverseString
+
+**Reverse String** it take an char array and return reversed array.
+
+- sortcharacter451
+
