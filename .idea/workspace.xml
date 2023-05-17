@@ -7,9 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Create ScannerWrapper.">
+    <list default="true" id="d8b30ed9-2cb4-4f32-9175-b91ee6dff9bb" name="Changes" comment="Class Fizz modification code. Create method getFizzBuzzValue(int i).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz412/Fizz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/fizzBuzz412/Fizz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/leetcode/fizzBuzz412/FizzTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/leetcode/fizzBuzz412/FizzTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,23 +75,7 @@
       <recent name="leetcode.reverseString" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FizzTest">
-    <configuration name="CharacterTest.shouldReturnFirstUniqChar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="codingchallenges" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="leetcode.firstUniqeCharacter387.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="leetcode.firstUniqeCharacter387" />
-      <option name="MAIN_CLASS_NAME" value="leetcode.firstUniqeCharacter387.CharacterTest" />
-      <option name="METHOD_NAME" value="shouldReturnFirstUniqChar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FizzTest.shouldReturnFizzBuzz">
     <configuration name="FibonacciTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="codingchallenges" />
       <extension name="coverage">
@@ -153,13 +138,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FizzTest.shouldReturnFizzBuzz" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="codingchallenges" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.fizzBuzz412.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="leetcode.fizzBuzz412" />
+      <option name="MAIN_CLASS_NAME" value="leetcode.fizzBuzz412.FizzTest" />
+      <option name="METHOD_NAME" value="shouldReturnFizzBuzz" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FizzTest.shouldReturnFizzBuzz" />
         <item itemvalue="JUnit.FizzTest" />
         <item itemvalue="JUnit.FizzTest.shouldReturnFizz" />
         <item itemvalue="JUnit.FibonacciTest.shouldTestFibonacci" />
         <item itemvalue="JUnit.FibonacciTest" />
-        <item itemvalue="JUnit.CharacterTest.shouldReturnFirstUniqChar" />
       </list>
     </recent_temporary>
   </component>
@@ -182,6 +183,8 @@
       <workItem from="1683568188531" duration="6533000" />
       <workItem from="1683616700530" duration="33929000" />
       <workItem from="1683791130881" duration="16581000" />
+      <workItem from="1684232341763" duration="6294000" />
+      <workItem from="1684345454624" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="Changes.">
       <created>1681805885728</created>
@@ -371,16 +374,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/leetcode/fibonacci/FibonacciTest.java</url>
           <line>77</line>
           <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/leetcode/fizzBuzz412/FizzTest.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/leetcode/fizzBuzz412/FizzTest.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
