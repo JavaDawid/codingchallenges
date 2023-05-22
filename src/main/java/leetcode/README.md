@@ -56,3 +56,8 @@ given a string "s" containing just the characters '(', ')', '{', '}', '[', ']', 
 #### DEPENDENCIES ####
 
 - JUnit Jupiter (org.junit.jupiter:junit-jupiter-engine:5.9.2) for testing.
+
+
+#### TESTING ####
+
+All my algorithms code has tests. JUnit was used to write tests 
