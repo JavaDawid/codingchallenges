@@ -3,14 +3,16 @@ package leetcode.validParentheses20;
 import java.util.*;
 
 public class Parentheses {
+    private static final List<Character> PARENTHESES = List.of('(', '{', '[');
+    private static final Map<Character, Character> BRACKETS = Map.of('(', ')', '[', ']', '{', '}');
+
     public boolean isValid(String s) {
-        Map<Character, Character> brackets = Map.of('(', ')', '[', ']', '{', '}');
         Deque<Character> stack = new ArrayDeque<>();
         for (char c : s.toCharArray()) {
-            if (brackets.containsKey(c)) {
+            if (PARENTHESES.contains(c)) {
                 stack.push(c);
             } else {
-                if (stack.isEmpty() || c != brackets.get(stack.pop())) {
+                if (stack.isEmpty() || c != BRACKETS.get(stack.pop())) {
                     return false;
                 }
             }
