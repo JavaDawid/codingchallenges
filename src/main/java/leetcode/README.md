@@ -50,4 +50,4 @@ If there is no common prefix, return the empty string "".
 that program take it array of integers and target integer. From array it select two numbers to add together will return target and return array index of that numbers. 
 
 - validParentheses20
-compare 
+given a string "s" containing just the characters '(', ')', '{', '}', '[', ']', determine if the input string is valid. Open brackets mus be closed by the same type of brackets and closed in the correct order.
