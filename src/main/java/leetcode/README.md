@@ -44,3 +44,10 @@ If there is no common prefix, return the empty string "".
 
 - sortcharacter451
 **Sort Characters By Frequency** sorts the letters in input string by frequency in the decreasing order. The frequency of a character is the number of times it appears in the string.
+
+
+- two/sum1
+that program take it array of integers and target integer. From array it select two numbers to add together will return target and return array index of that numbers. 
+
+- validParentheses20
+compare 
