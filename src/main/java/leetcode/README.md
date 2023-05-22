@@ -22,7 +22,7 @@ The **Fibonacci Sequence** is a series of numbers where a number is found by add
 
 - increase
 
-...
+multiplies two integers without multiplies sign.
 
 
 - largeelement
@@ -51,3 +51,8 @@ that program take it array of integers and target integer. From array it select 
 
 - validParentheses20
 given a string "s" containing just the characters '(', ')', '{', '}', '[', ']', determine if the input string is valid. Open brackets mus be closed by the same type of brackets and closed in the correct order.
+
+
+#### DEPENDENCIES ####
+
+- JUnit Jupiter (org.junit.jupiter:junit-jupiter-engine:5.9.2) for testing.
