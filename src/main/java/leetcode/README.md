@@ -21,8 +21,7 @@ The **Fibonacci Sequence** is a series of numbers where a number is found by add
 
 
 - increase
-
-...
+multiplies two integers without multiplies sign.
 
 
 - largeelement
@@ -44,3 +43,20 @@ If there is no common prefix, return the empty string "".
 
 - sortcharacter451
 **Sort Characters By Frequency** sorts the letters in input string by frequency in the decreasing order. The frequency of a character is the number of times it appears in the string.
+
+
+- two/sum1
+that program take it array of integers and target integer. From array it select two numbers to add together will return target and return array index of that numbers. 
+
+- validParentheses20
+given a string "s" containing just the characters '(', ')', '{', '}', '[', ']', determine if the input string is valid. Open brackets mus be closed by the same type of brackets and closed in the correct order.
+
+
+#### DEPENDENCIES ####
+
+- JUnit Jupiter (org.junit.jupiter:junit-jupiter-engine:5.9.2) for testing.
+
+
+#### TESTING ####
+
+All my algorithms code has tests. JUnit was used to write tests 
