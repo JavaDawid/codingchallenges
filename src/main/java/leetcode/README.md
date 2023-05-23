@@ -21,7 +21,6 @@ The **Fibonacci Sequence** is a series of numbers where a number is found by add
 
 
 - increase
-
 multiplies two integers without multiplies sign.
 
 
