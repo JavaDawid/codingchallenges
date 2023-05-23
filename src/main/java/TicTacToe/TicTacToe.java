@@ -1,17 +1,13 @@
 package TicTacToe;
 
-import java.util.Scanner;
-
 public class TicTacToe {
     private boolean endGame = true;
-    public static Scanner scanner = new Scanner(System.in);
     private WinLogic winLogic = new WinLogic();
     private Board board = new Board();
     private UserInterface userInterface = new UserInterface();
     private MovementLogic movementLogic = new MovementLogic();
 
-    public TicTacToe(Scanner scanner, Board board, WinLogic winLogic, MovementLogic movementLogic, UserInterface userInterface) {
-        this.scanner = scanner;
+    public TicTacToe(Board board, WinLogic winLogic, MovementLogic movementLogic, UserInterface userInterface) {
         this.board = board;
         this.winLogic = winLogic;
         this.movementLogic = movementLogic;
@@ -37,39 +33,24 @@ public class TicTacToe {
         int player = 1;
         while (!win) {
             if (player == 1) {
-                win = userGameLogic(board);
+                moveGameLogic(board, Board.CIRCLE);
                 board.printBoard();
+                GameStatus gameStatus = winLogic.checkWin();
+                System.out.println(gameStatus);
                 player = 2;
             } else {
-                win = computerGameLogic(board);
+                moveGameLogic(board, Board.CROSS);
                 board.printBoard();
+                GameStatus gameStatus = winLogic.checkWin();
+                System.out.println(gameStatus);
                 player = 1;
             }
         }
     }
 
-    private boolean computerGameLogic(Board board) {
-        boolean win;
-        MovementLogic computerMove = movementLogic.computerDoAMove();
-        board.saveComputerMoveOnBoard(computerMove);
-        win = winLogic.checkWin();
-        return win;
+    private void moveGameLogic(Board board, char symbol) {
+        Position userMove = movementLogic.doAMove(symbol);
+        board.verificationMoveAndSaveOnBoard(userMove.getRowNumber(), userMove.getColumnNumber(), symbol);
     }
 
-    private boolean userGameLogic(Board board) {
-        boolean win;
-        MovementLogic userMoveAfterIncorrectInput;
-        try {
-            MovementLogic userMove = movementLogic.doAMove();
-            board.saveUserMoveOnBoard(userMove);
-            win = winLogic.checkWin();
-            return win;
-        } catch (ArrayIndexOutOfBoundsException e) {
-            UserInterface.movementOffTheBoard(movementLogic);
-            userMoveAfterIncorrectInput = movementLogic.doAMove();
-            board.saveUserMoveOnBoard(userMoveAfterIncorrectInput);
-            win = winLogic.checkWin();
-        }
-        return win;
-    }
 }

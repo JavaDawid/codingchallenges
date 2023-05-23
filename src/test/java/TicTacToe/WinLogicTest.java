@@ -2,51 +2,39 @@ package TicTacToe;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
 
-class WinLogicTest {
+public class WinLogicTest {
+
+    @Mock
+    private Board board;
+
     private WinLogic winLogic;
 
     @BeforeEach
-    void setUp() {
-        winLogic = new WinLogic();
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+        winLogic = new WinLogic(board);
     }
 
     @Test
-    void testCheckWinNoWin() {
-        Board board = new Board();
-        board.fillBoardEmptyPlace();
-        assertFalse(winLogic.checkWin());
-    }
+    public void testCheckWin() {
+        //given
+        char[][] boardData = {
+                {'X', ' ', ' '},
+                {' ', 'X', ' '},
+                {' ', ' ', 'X'}
+        };
+        when(board.getBoard()).thenReturn(boardData);
 
-    @Test
-    void testCheckWinRowWin() {
-        Board board = new Board();
-        board.fillBoardEmptyPlace();
-        board.saveUserMoveOnBoard(new MovementLogic(0, 0));
-        board.saveUserMoveOnBoard(new MovementLogic(0, 1));
-        board.saveUserMoveOnBoard(new MovementLogic(0, 2));
-        assertTrue(winLogic.checkWin());
-    }
+        //when
+        GameStatus status = winLogic.checkWin();
 
-    @Test
-    void testCheckWinColumnWin() {
-        Board board = new Board();
-        board.fillBoardEmptyPlace();
-        board.saveUserMoveOnBoard(new MovementLogic(0, 0));
-        board.saveUserMoveOnBoard(new MovementLogic(1, 0));
-        board.saveUserMoveOnBoard(new MovementLogic(2, 0));
-        assertTrue(winLogic.checkWin());
-    }
-
-    @Test
-    void testCheckWinDiagonalWin() {
-        Board board = new Board();
-        board.fillBoardEmptyPlace();
-        board.saveComputerMoveOnBoard(new MovementLogic(0, 0));
-        board.saveComputerMoveOnBoard(new MovementLogic(1, 1));
-        board.saveComputerMoveOnBoard(new MovementLogic(2, 2));
-        assertTrue(winLogic.checkWin());
+        //then
+        assertEquals(GameStatus.X_WON, status);
     }
 }

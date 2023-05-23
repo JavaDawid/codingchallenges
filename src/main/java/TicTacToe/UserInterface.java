@@ -23,14 +23,14 @@ public class UserInterface {
         System.out.println("Computer won the game");
     }
 
-    public static void movementOffTheBoard(MovementLogic movementLogic) {
-        System.err.println("Pozycja  " + movementLogic.getRowNumber() + " " + movementLogic.getColumnNumber() +
-                " mieści się poza planszą");
-        System.err.println("Wykonaj ponowny ruch");
-    }
+//    public static void movementOffTheBoard(MovementLogic movementLogic) {
+//        System.err.println("Pozycja  " + movementLogic.getRowNumber() + " " + movementLogic.getColumnNumber() +
+//                " mieści się poza planszą");
+//        System.err.println("Wykonaj ponowny ruch");
+//    }
 
-    public static void mistakeFromIdenticalMove(MovementLogic movementLogic) {
-        System.err.println("Pozycja " + movementLogic.getRowNumber() + " " + movementLogic.getColumnNumber() +
+    public static void mistakeFieldOccupied(Position move) {
+        System.err.println("Pozycja " + move.getRowNumber() + " " + move.getColumnNumber() +
                 " jest już zajęta!");
     }
 }

@@ -3,42 +3,44 @@ package TicTacToe;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import java.util.Scanner;
+public class TicTacToeTest {
 
-import static org.mockito.Mockito.*;
-
-class TicTacToeTest {
-    @Mock
-    private Scanner scanner;
     @Mock
     private Board board;
+
     @Mock
     private WinLogic winLogic;
+
     @Mock
     private MovementLogic movementLogic;
+
     @Mock
     private UserInterface userInterface;
-    private TicTacToe ticTacToe;
+
+    private TicTacToe game;
 
     @BeforeEach
-    void setUp() {
+    public void setUp() {
         MockitoAnnotations.openMocks(this);
-        ticTacToe = new TicTacToe(scanner, board, winLogic, movementLogic, userInterface);
+        game = new TicTacToe(board, winLogic, movementLogic, userInterface);
     }
 
     @Test
-    void testLoop() {
-        when(winLogic.checkWin()).thenReturn(false, true);
-        when(movementLogic.computerDoAMove()).thenReturn(new MovementLogic(1, 1));
-        when(movementLogic.doAMove()).thenReturn(new MovementLogic(0, 0));
-        when(movementLogic.doAMove()).thenReturn(new MovementLogic(0, 0));
+    public void testLoop() {
+        //given
+        Position position = new Position(0, 0);
+        Mockito.when(movementLogic.doAMove(Mockito.anyChar())).thenReturn(position);
 
-        ticTacToe.loop();
+        //when
+        game.loop();
 
-        verify(userInterface, times(1)).startGame();
-        verify(board, times(1)).fillBoardEmptyPlace();
-        verify(userInterface, times(1)).printTemplate();
+        //then
+        Mockito.verify(userInterface, Mockito.times(1)).startGame();
+        Mockito.verify(board, Mockito.times(1)).fillBoardEmptyPlace();
+        Mockito.verify(board, Mockito.times(1)).printBoard();
+        Mockito.verify(userInterface, Mockito.times(1)).printTemplate();
     }
 }

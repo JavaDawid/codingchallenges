@@ -2,39 +2,66 @@ package TicTacToe;
 
 public class WinLogic {
 
-    public boolean checkWin() {
-        char symbol;
 
-        for (int i = 0; i < Board.board.length; i++) {
-            symbol = Board.board[i][0];
-            if (symbol != ' ' && symbol == Board.board[i][1] && symbol == Board.board[i][2]) {
-                checkWhoWin(symbol);
-                return true;
-            }
-            symbol = Board.board[0][i];
-            if (symbol != ' ' && symbol == Board.board[1][i] && symbol == Board.board[2][i]) {
-                checkWhoWin(symbol);
-                return true;
+    public GameStatus checkWin() {
+        for (char symbol : new char[]{Board.CIRCLE, Board.CROSS}) {
+            for (int i = 0; i < Board.board.length; i++) {
+                if (checkSameSymbolInColumn(i, symbol) || checkSameSymbolInRow(i, symbol) ||
+                        checkSameSymbolInMainDiagonal(symbol) || checkSameSymbolInSecondaryDiagonal(symbol)) {
+                    return symbol == Board.CIRCLE ? GameStatus.O_WON : GameStatus.X_WON;
+                }
             }
         }
-        symbol = Board.board[0][0];
-        if (symbol != ' ' && symbol == Board.board[1][1] && symbol == Board.board[2][2]) {
-            checkWhoWin(symbol);
-            return true;
+        if (noEmptyFields()) {
+            return GameStatus.DRAW;
         }
-        symbol = Board.board[0][2];
-        if (symbol != ' ' && symbol == Board.board[1][1] && symbol == Board.board[2][0]) {
-            checkWhoWin(symbol);
-            return true;
-        }
-        return false;
+        return GameStatus.ONGOING;
     }
 
-    private void checkWhoWin(char symbol) {
-        if (symbol == Board.CIRCLE) {
-            UserInterface.userIsAWinner();
-        } else if (symbol == Board.CROSS) {
-            UserInterface.computerIsAWinner();
+    private boolean noEmptyFields() {
+        for (int i = 0; i < Board.board.length; i++) {
+            for (int j = 0; j < Board.board.length; j++) {
+                if (Board.board[i][j] == Board.EMPTY) {
+                    return false;
+                }
+            }
         }
+        return true;
+    }
+
+    private boolean checkSameSymbolInColumn(int columnNumber, char symbol) {
+        for (int i = 0; i < 3; i++) {
+            if (Board.board[i][columnNumber] != symbol) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean checkSameSymbolInRow(int rowNumber, char symbol) {
+        for (int i = 0; i < 3; i++) {
+            if (Board.board[rowNumber][i] != symbol) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean checkSameSymbolInMainDiagonal(char symbol) {
+        for (int i = 0; i < Board.board.length; i++) {
+            if (Board.board[i][i] != symbol) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean checkSameSymbolInSecondaryDiagonal(char symbol) {
+        for (int i = 0; i < Board.board.length; i++) {
+            if (Board.board[i][2 - i] != symbol) {
+                return false;
+            }
+        }
+        return true;
     }
 }

@@ -2,49 +2,48 @@ package TicTacToe;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
 
-import java.io.ByteArrayInputStream;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
 
-class MovementLogicTest {
+public class MovementLogicTest {
+
+    @InjectMocks
     private Board board;
+
+    @Mock
+    private ScannerWrapper scannerWrapper;
+
+    @Mock
+    private Random random;
+
     private MovementLogic movementLogic;
 
     @BeforeEach
-    void setUp() {
-        board = Mockito.mock(Board.class);
+    public void setUp() {
+        MockitoAnnotations.openMocks(this);
+        movementLogic = new MovementLogic(board, scannerWrapper, random);
     }
 
     @Test
-    void testDoAMove() {
-        String simulatedUserInput = "0\n2\n";
-        ByteArrayInputStream in = new ByteArrayInputStream(simulatedUserInput.getBytes());
-        System.setIn(in);
-        TicTacToe.scanner = new Scanner(System.in);
+    public void testDoAMove() {
+        //given
+        char symbol = Board.CROSS;
+        Position expectedPosition = new Position(1, 1);
+        when(board.checkBoardAndFindFreePosition()).thenReturn(Arrays.asList(new Position(0, 0), expectedPosition));
+        when(random.nextInt(Mockito.anyInt())).thenReturn(1); // Always return the last index
 
-        movementLogic = new MovementLogic(0, 0);
-        MovementLogic userMove = movementLogic.doAMove();
+        //when
+        Position actualPosition = movementLogic.doAMove(symbol);
 
-        assertEquals(0, userMove.getRowNumber());
-        assertEquals(2, userMove.getColumnNumber());
-    }
-
-    @Test
-    void testComputerDoAMove() {
-        List<int[]> emptyFields = new ArrayList<>(Arrays.asList(new int[]{2, 2}, new int[]{1, 1}));
-        Mockito.when(board.checkBoardAndFindFreePosition()).thenReturn(emptyFields);
-
-        movementLogic = new MovementLogic(0, 0);
-        movementLogic.board = board;
-        MovementLogic computerMove = movementLogic.computerDoAMove();
-
-        assertTrue(computerMove.getRowNumber() == 2 && computerMove.getColumnNumber() == 2
-                || computerMove.getRowNumber() == 1 && computerMove.getColumnNumber() == 1);
+        //then
+        assertEquals(expectedPosition, actualPosition, "The selected position should be the last position in the list of free positions");
     }
 }
