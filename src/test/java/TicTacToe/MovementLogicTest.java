@@ -1,49 +1,59 @@
 package TicTacToe;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
-import java.util.Random;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.*;
+
+@ExtendWith(MockitoExtension.class)
 
 public class MovementLogicTest {
-
-    @InjectMocks
+    @Mock
     private Board board;
-
     @Mock
     private ScannerWrapper scannerWrapper;
-
     @Mock
-    private Random random;
-
+    private RandomWrapper randomWrapper;
+    @InjectMocks
     private MovementLogic movementLogic;
 
-    @BeforeEach
-    public void setUp() {
-        MockitoAnnotations.openMocks(this);
-        movementLogic = new MovementLogic(board, scannerWrapper, random);
+    @Test
+    public void computerShouldDoAMove() {
+        //given
+        Position position1 = new Position(2, 1);
+        Position position2 = new Position(0, 1);
+        List<Position> positions = Arrays.asList(position1, position2);
+
+        when(board.findFreePositions()).thenReturn(positions);
+        when(randomWrapper.nextInt(Mockito.anyInt())).thenReturn(1);
+        //when
+        Position result = movementLogic.doAMove(board.CROSS);
+
+        //then
+        assertEquals(position2, result);
+        verify(board, atLeastOnce()).findFreePositions();
     }
 
     @Test
-    public void testDoAMove() {
+    public void userShouldDoAMove() {
         //given
-        char symbol = Board.CROSS;
-        Position expectedPosition = new Position(1, 1);
-        when(board.checkBoardAndFindFreePosition()).thenReturn(Arrays.asList(new Position(0, 0), expectedPosition));
-        when(random.nextInt(Mockito.anyInt())).thenReturn(1); // Always return the last index
+        int inputRow = 2;
+        int inputColumn = 1;
+        when(scannerWrapper.input()).thenReturn(inputRow, inputColumn);
 
         //when
-        Position actualPosition = movementLogic.doAMove(symbol);
+        Position result = movementLogic.doAMove(board.CIRCLE);
 
         //then
-        assertEquals(expectedPosition, actualPosition, "The selected position should be the last position in the list of free positions");
+        assertEquals(new Position(inputRow, inputColumn), result);
     }
+    //does not check the size array, only check the correct flow of information
 }

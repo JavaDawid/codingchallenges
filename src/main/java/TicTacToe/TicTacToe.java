@@ -1,11 +1,10 @@
 package TicTacToe;
 
 public class TicTacToe {
-    private boolean endGame = true;
     private WinLogic winLogic = new WinLogic();
     private Board board = new Board();
     private UserInterface userInterface = new UserInterface();
-    private MovementLogic movementLogic = new MovementLogic();
+    private Player movementLogic = new MovementLogic();
 
     public TicTacToe(Board board, WinLogic winLogic, MovementLogic movementLogic, UserInterface userInterface) {
         this.board = board;
@@ -18,39 +17,34 @@ public class TicTacToe {
     }
 
     public void loop() {
-        while (endGame) {
+        while (winLogic.isGameContinues()) {
             userInterface.startGame();
             board.fillBoardEmptyPlace();
             board.printBoard();
             userInterface.printTemplate();
             play(board);
-            endGame = false;
         }
     }
 
-    private void play(Board board) {
-        boolean win = false;
+    public void play(Board board) {
         int player = 1;
-        while (!win) {
+        while (!winLogic.isWin() && winLogic.isGameContinues()) {
             if (player == 1) {
-                moveGameLogic(board, Board.CIRCLE);
+                moveGameLogic(board, board.CIRCLE);
                 board.printBoard();
-                GameStatus gameStatus = winLogic.checkWin();
-                System.out.println(gameStatus);
                 player = 2;
             } else {
-                moveGameLogic(board, Board.CROSS);
+                moveGameLogic(board, board.CROSS);
                 board.printBoard();
-                GameStatus gameStatus = winLogic.checkWin();
-                System.out.println(gameStatus);
                 player = 1;
             }
+            GameStatus status = winLogic.checkWin();
+            System.out.println(status);
         }
     }
 
-    private void moveGameLogic(Board board, char symbol) {
+    public void moveGameLogic(Board board, char symbol) {
         Position userMove = movementLogic.doAMove(symbol);
         board.verificationMoveAndSaveOnBoard(userMove.getRowNumber(), userMove.getColumnNumber(), symbol);
     }
-
 }
