@@ -1,29 +1,22 @@
 package leetcode.validParentheses20;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 public class Parentheses {
+    private static final List<Character> PARENTHESES = List.of('(', '{', '[');
+    private static final Map<Character, Character> BRACKETS = Map.of('(', ')', '[', ']', '{', '}');
+
     public boolean isValid(String s) {
-        Deque<Character> brackets = new ArrayDeque<>();
+        Deque<Character> stack = new ArrayDeque<>();
         for (char c : s.toCharArray()) {
-            if (c == '(' || c == '{' || c == '[') {
-                brackets.push(c);
+            if (PARENTHESES.contains(c)) {
+                stack.push(c);
             } else {
-                if (brackets.isEmpty()) {
+                if (stack.isEmpty() || c != BRACKETS.get(stack.pop())) {
                     return false;
                 }
-                char up = brackets.pop();
-                if (c == ')' && up != '(') {
-                    return false;
-                }
-                if (c == ']' && up != '[') {
-                    return false;
-                }
-                if (c == '}' && up != '{')
-                    return false;
             }
-        }// commit zrobić i merge do mastera
-        return brackets.isEmpty();
+        }
+        return stack.isEmpty();
     }
 }

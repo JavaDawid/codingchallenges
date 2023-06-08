@@ -1,40 +1,40 @@
 package leetcode.sortcharacter451;
 
-import java.util.HashMap;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class SortCharacters {
     public String frequencySort(String s) {
         char[] chars = s.toCharArray();
-        HashMap<Character, Integer> letters = countQuantityLettersInWord(chars);
-        Queue<Character> queue = sortMap(letters);
-        String string = convertAtString(queue, letters);
-        return string;
+        Map<Character, Integer> letters = countQuantityLettersInWord(chars);
+        Map<Character, Integer> sortedMap = sortMap(letters);
+        return convertAtString(sortedMap);
     }
 
-    private String convertAtString(Queue<Character> queue, HashMap<Character, Integer> letters) {
+    private String convertAtString(Map<Character, Integer> sortedMap) {
         StringBuilder stringBuilder = new StringBuilder();
-        while (!queue.isEmpty()) {
-            Character poll = queue.poll();
-            for (int i = 0; i < letters.get(poll); i++) {
-                stringBuilder.append(poll);
+        for (Map.Entry<Character, Integer> entry : sortedMap.entrySet()) {
+            Character key = entry.getKey();
+            Integer value = entry.getValue();
+            for (int i = 0; i < value; i++) {
+                stringBuilder.append(key);
             }
         }
         return String.valueOf(stringBuilder);
     }
 
-    private Queue<Character> sortMap(HashMap<Character, Integer> letters) {
-        Queue<Character> queue = new PriorityQueue<>((a, b) -> letters.get(b) - letters.get(a));
-        queue.addAll(letters.keySet());
-        return queue;
+    private Map<Character, Integer> sortMap(Map<Character, Integer> letters) {
+
+        return letters.entrySet().stream().sorted(Map.Entry.<Character, Integer>comparingByValue().reversed())
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new));
     }
 
     private HashMap<Character, Integer> countQuantityLettersInWord(char[] s) {
         HashMap<Character, Integer> letters = new HashMap<>();
         for (int i = 0; i < s.length; i++) {
             char actualChar = s[i];
-            letters.put(actualChar, letters.getOrDefault(actualChar, 0) + 1);
+            letters.putIfAbsent(actualChar, 0);
+            letters.put(actualChar, letters.get(actualChar) + 1);
         }
         return letters;
     }

@@ -1,23 +1,28 @@
 package leetcode.fizzBuzz412;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Fizz {
+    List<String> lists = new ArrayList<>();
+
     public List<String> fizzBuzz(int n) {
-        List<String> lists = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
-            if ((i % 3 == 0) && (i % 5 == 0)) {
-                lists.add("FizzBuzz");
-            } else if ((i % 3 == 0) || (i % 5 == 0)) {
-                if (i % 3 == 0) {
-                    lists.add("Fizz");
-                } else if (i % 5 == 0) {
-                    lists.add("Buzz");
-                }
-            } else {
-                lists.add(String.valueOf(i));
-            }
+            lists.add(getFizzBuzzValue(i));
         }
         return lists;
+    }
+
+    private String getFizzBuzzValue(int i) {
+        if ((i % 3 == 0) && (i % 5 == 0)) {
+            return "FizzBuzz";
+        } else if ((i % 3 == 0) || (i % 5 == 0)) {
+            if (i % 3 == 0) {
+                return "Fizz";
+            } else if (i % 5 == 0) {
+                return "Buzz";
+            }
+        }
+        return String.valueOf(i);
     }
 }

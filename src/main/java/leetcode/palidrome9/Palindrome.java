@@ -3,11 +3,6 @@ package leetcode.palidrome9;
 import java.util.Scanner;
 
 public class Palindrome {
-    public int takeDigitFromUser() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj liczbę do sprawdzenia czy jest polindromem");
-        return scanner.nextInt();
-    }
 
     public boolean isPalindrome(int x) {
         if (x < 0) {

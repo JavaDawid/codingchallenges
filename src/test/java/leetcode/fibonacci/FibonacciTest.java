@@ -3,32 +3,78 @@ package leetcode.fibonacci;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-
-
 class FibonacciTest {
+
     @Test
-    public void shouldTestFibonacci() {
+    public void shouldReturnZeroWhenInputIsZero() {
+        //given
         Fibonacci fibonacci = new Fibonacci();
-        int input1 = 2;
-        int input2 = 3;
-        int input3 = 4;
-        int input4 = 1;
-        int input5 = 0;
-        int input6 = 5;
+        int input = 0;
+        int expectedOutput = 0;
+        //when
+        int result = fibonacci.fib(input);
+        //then
+        Assertions.assertEquals(expectedOutput, result);
+    }
 
-        int output1 = 1;
-        int output2 = 2;
-        int output3 = 3;
-        int output4 = 1;
-        int output5 = 0;
-        int output6 = 5;
+    @Test
+    public void shouldReturnOneWhenInputIsOne() {
+        //given
+        Fibonacci fibonacci = new Fibonacci();
+        int input = 1;
+        int expectedOutput = 1;
+        //when
+        int result = fibonacci.fib(input);
+        //then
+        Assertions.assertEquals(expectedOutput, result);
+    }
 
-        Assertions.assertEquals(output1, fibonacci.fib(input1));
-        Assertions.assertEquals(output2, fibonacci.fib(input2));
-        Assertions.assertEquals(output3, fibonacci.fib(input3));
-        Assertions.assertEquals(output4, fibonacci.fib(input4));
-        Assertions.assertEquals(output5, fibonacci.fib(input5));
-        Assertions.assertEquals(output6, fibonacci.fib(input6));
+    @Test
+    public void shouldReturnOneWhenInputIsTwo() {
+        //given
+        Fibonacci fibonacci = new Fibonacci();
+        int input = 2;
+        int expectedOutput = 1;
+        //when
+        int result = fibonacci.fib(input);
+        //then
+        Assertions.assertEquals(expectedOutput, result);
+    }
+
+    @Test
+    public void shouldReturnTwoWhenInputIsThree() {
+        //given
+        Fibonacci fibonacci = new Fibonacci();
+        int input = 3;
+        int expectedOutput = 2;
+        //when
+        int result = fibonacci.fib(input);
+        //then
+        Assertions.assertEquals(expectedOutput, result);
+    }
+
+    @Test
+    public void shouldReturnThreeWhenInputIsFour() {
+        //given
+        Fibonacci fibonacci = new Fibonacci();
+        int input = 4;
+        int expectedOutput = 3;
+        //when
+        int result = fibonacci.fib(input);
+        //then
+        Assertions.assertEquals(expectedOutput, result);
+    }
+
+    @Test
+    public void shouldReturnFiveWhenInputIsFive() {
+        //given
+        Fibonacci fibonacci = new Fibonacci();
+        int input = 5;
+        int expectedOutput = 5;
+        //when
+        int result = fibonacci.fib(input);
+        //then
+        Assertions.assertEquals(expectedOutput, result);
     }
 
 }
