@@ -25,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IncreaseTest" />
-        <item itemvalue="Application.Increase" />
-        <item itemvalue="JUnit.ParenthesesTest" />
         <item itemvalue="JUnit.ParenthesesTest.shouldValidParentheses" />
+        <item itemvalue="JUnit.ParenthesesTest" />
+        <item itemvalue="JUnit.IncreaseTest" />
         <item itemvalue="JUnit.FizzTest" />
+        <item itemvalue="Application.Increase" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +310,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/two/sum1/Sum.java</url>
           <line>6</line>
-          <properties class="leetcode.two.sum1.Sum" method="twoSum">
+          <properties class="leetcode.two.sum1.Sum">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
@@ -340,8 +340,26 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/codingchallenges$TicTacToeTest_testMoveGameLogicWhenUserMoveIsInvalid.ic" NAME="TicTacToeTest.testMoveGameLogicWhenUserMoveIsInvalid Coverage Results" MODIFIED="1686121316713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TicTacToe.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/codingchallenges$ElementTest_shouldGiveSecondLargestElement.ic" NAME="ElementTest.shouldGiveSecondLargestElement Coverage Results" MODIFIED="1682503959192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>leetcode.largeelement.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/codingchallenges$MovementLogicTest.ic" NAME="MovementLogicTest Coverage Results" MODIFIED="1686060807938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TicTacToe.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/codingchallenges$WinLogicTest.ic" NAME="WinLogicTest Coverage Results" MODIFIED="1686060862862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TicTacToe.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/codingchallenges$BoardTest.ic" NAME="BoardTest Coverage Results" MODIFIED="1686060956471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TicTacToe.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/codingchallenges$FizzTest.ic" NAME="FizzTest Coverage Results" MODIFIED="1681979717426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>leetcode.fizzBuzz412.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/codingchallenges$TicTacToeTest.ic" NAME="TicTacToeTest Coverage Results" MODIFIED="1686060797039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>TicTacToe.*</FILTER>
     </SUITE>
   </component>
 </project>
