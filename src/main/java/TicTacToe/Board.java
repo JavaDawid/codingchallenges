@@ -4,11 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
-    private final char[][] board = new char[3][3];
+
+    private char[][] board = new char[3][3];
+
     public List<Position> freePositions;
 
+    public Board() {
+        fillBoardEmptyPlace();
+    }
+
     public char[][] getBoard() {
-        return board;
+        return getBoardCopy(board);
+    }
+
+    public char[][] getBoardCopy(char[][] originalBoard) {
+        char[][] copyBoard = new char[originalBoard.length][originalBoard.length];
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                copyBoard[i][j] = originalBoard[i][j];
+            }
+        }
+        return copyBoard;
     }
 
     public void printBoard() {
@@ -40,17 +56,13 @@ public class Board {
         return boardWithEmptyField;
     }
 
-    public void markPosition(int move, int move1, char symbol) {
-        board[move][move1] = symbol;
-    }
-
-    public void verificationMoveAndSaveOnBoard(int x, int y, char symbol) {
-        Position move = new Position(x, y);
+    public void markPosition(Position position, char symbol) {
+        Position move = new Position(position.getRowNumber(), position.getColumnNumber());
         boolean positionIsFree = checkMoveWithFreePositionOnBoard(move);
         if (!positionIsFree) {
             throw new RuntimeException("Pozycja jest zajęta");
         }
-        markPosition(move.getRowNumber(), move.getColumnNumber(), symbol);
+        board[position.getRowNumber()][position.getColumnNumber()] = symbol;
     }
 
     private boolean checkMoveWithFreePositionOnBoard(Position move) {
@@ -58,23 +70,11 @@ public class Board {
         return freePositions.contains(move);
     }
 
-    public void fillBoardEmptyPlace() {
+    private void fillBoardEmptyPlace() {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
                 board[i][j] = Figures.EMPTY.getCharacter();
             }
         }
     }
-//    public Board copy() {
-//        Board copyBoard = new Board();
-//        for (int i = 0; i < board.length; i++) {
-//            for (int j = 0; j < board[i].length; j++) {
-//                copyBoard.markPosition(i, j, board[i][j]);
-//            }
-//        }
-//        return copyBoard;
-//    }
-
-    //czekam na zatwierdzenie
-
 }

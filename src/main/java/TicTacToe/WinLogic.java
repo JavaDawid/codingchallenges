@@ -2,26 +2,34 @@ package TicTacToe;
 
 public class WinLogic {
     private Board board;
-    private boolean gameContinues = true;
 
     public WinLogic(Board board) {
         this.board = board;
     }
 
-    public WinLogic() {
+    public GameStatus checkWin() {
+        if (checkWin(Figures.CIRCLE)) {
+            return GameStatus.O_WON;
+        }
+        if (checkWin(Figures.CROSS)) {
+            return GameStatus.X_WON;
+        }
+        if (emptyFieldsPresent() == 0) {
+            return GameStatus.DRAW;
+        } else {
+            return GameStatus.ONGOING;
+        }
     }
 
-    public GameStatus checkWin() {
-        for (char symbol : new char[]{Figures.CIRCLE.getCharacter(), Figures.CROSS.getCharacter()}) {
-            for (int i = 0; i < board.getBoard().length; i++) {
-                if (checkSameSymbolInColumn(i, symbol) || checkSameSymbolInRow(i, symbol) ||
-                        checkSameSymbolInDiagonal(symbol, true) || checkSameSymbolInDiagonal(symbol, false)) {
-                    gameContinues = true;
-                    return symbol == Figures.CIRCLE.getCharacter() ? GameStatus.O_WON : GameStatus.X_WON;
-                }
+    private boolean checkWin(Figures symbol) {
+        char symbolChar = symbol.getCharacter();
+        for (int i = 0; i < board.getBoard().length; i++) {
+            if (checkSameSymbolInColumn(i, symbolChar) || checkSameSymbolInRow(i, symbolChar) ||
+                    checkSameSymbolInDiagonal(symbolChar, true) || checkSameSymbolInDiagonal(symbolChar, false)) {
+                return true;
             }
         }
-        return noEmptyFields() ? GameStatus.DRAW : GameStatus.ONGOING;
+        return false;
     }
 
     private boolean checkSameSymbolInColumn(int columnNumber, char symbol) {
@@ -32,13 +40,6 @@ public class WinLogic {
         }
         return true;
     }
-
-//    private boolean checkSameSymbolColumn(int columnNumber, char symbol) {
-//        return board.getBoard()[0][columnNumber] != symbol ||
-//                board.getBoard()[1][columnNumber] != symbol ||
-//                board.getBoard()[2][columnNumber] != symbol;
-//    }
-    //do zaakceptowania bo nie wiem czy o to chodzi
 
     private boolean checkSameSymbolInRow(int rowNumber, char symbol) {
         for (int i = 0; i < board.getBoard().length; i++) {
@@ -59,23 +60,15 @@ public class WinLogic {
         return true;
     }
 
-    private boolean noEmptyFields() {
+    private int emptyFieldsPresent() {
+        int emptyFields = 0;
         for (int i = 0; i < board.getBoard().length; i++) {
             for (int j = 0; j < board.getBoard()[i].length; j++) {
                 if (board.getBoard()[i][j] == Figures.EMPTY.getCharacter()) {
-                    return false;
+                    emptyFields++;
                 }
             }
         }
-        return true;
+        return emptyFields;
     }
-
-    public boolean isGameContinues() {
-        return gameContinues;
-    }
-
-    public void setGameContinues(boolean gameContinues) {
-        this.gameContinues = gameContinues;
-    }
-
 }

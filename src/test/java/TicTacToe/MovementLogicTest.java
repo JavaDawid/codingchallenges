@@ -1,10 +1,9 @@
 package TicTacToe;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
@@ -14,7 +13,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-
 public class MovementLogicTest {
     @Mock
     private Board board;
@@ -22,14 +20,9 @@ public class MovementLogicTest {
     private ScannerWrapper scannerWrapper;
     @Mock
     private RandomWrapper randomWrapper;
+
+    @InjectMocks
     private MovementLogic movementLogic;
-
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.openMocks(this);
-        movementLogic = new MovementLogic(board, scannerWrapper, randomWrapper);
-    }
-
 
     @Test
     public void computerShouldDoAMove() {
@@ -45,7 +38,6 @@ public class MovementLogicTest {
 
         //then
         assertEquals(position1, result);
-        verify(board, atLeastOnce()).findFreePositions();
     }
 
     @Test

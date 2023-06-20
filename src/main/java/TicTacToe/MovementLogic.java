@@ -3,12 +3,10 @@ package TicTacToe;
 import java.util.List;
 
 public class MovementLogic implements Player {
-    private Board board = new Board();
-    private ScannerWrapper scannerWrapper = new ScannerWrapper();
-    private RandomWrapper randomWrapper = new RandomWrapper();
 
-    public MovementLogic() {
-    }
+    private Board board;
+    private ScannerWrapper scannerWrapper;
+    private RandomWrapper randomWrapper ;
 
     public MovementLogic(Board board, ScannerWrapper scannerWrapper, RandomWrapper randomWrapper) {
         this.board = board;
@@ -18,7 +16,7 @@ public class MovementLogic implements Player {
 
     @Override
     public Position doAMove(char symbol) {
-        Position position = null;
+        Position position;
         if (symbol == Figures.CROSS.getCharacter()) {
             List<Position> emptyFields = board.findFreePositions();
             if (emptyFields.size() > 0) {
@@ -34,9 +32,9 @@ public class MovementLogic implements Player {
         if (symbol == Figures.CIRCLE.getCharacter()) {
             int rowNumber = scannerWrapper.input();
             int columnNumber = scannerWrapper.input();
-            position = new Position(rowNumber, columnNumber);
+            return new Position(rowNumber, columnNumber);
         }
-        return position;
+        return null;
     }
 
 }

@@ -1,6 +1,5 @@
 package TicTacToe;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -8,6 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 public class WinLogicTest {
@@ -16,8 +16,8 @@ public class WinLogicTest {
     @Mock
     private Board board;
 
-    private final char cross = 'X';
-    private final char circle = 'O';
+    private static final char CROSS = 'X';
+    private static final char CIRCLE = 'O';
     private final int size = 3;
 
     @BeforeEach
@@ -31,18 +31,15 @@ public class WinLogicTest {
         //given
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < 1; j++) {
-                board.markPosition(i, j, circle);
+                board.markPosition(new Position(i, j), CIRCLE);
             }
         }
-//        board.markPosition(0, 0, circle);
-//        board.markPosition(1, 0, circle);
-//        board.markPosition(2, 0, circle);
 
         //when
         GameStatus status = winLogic.checkWin();
 
         //then
-        Assertions.assertEquals(GameStatus.O_WON, status);
+        assertEquals(GameStatus.O_WON, status);
     }
 
     @Test
@@ -50,65 +47,76 @@ public class WinLogicTest {
         //given
         for (int i = 0; i < 1; i++) {
             for (int j = 0; j < size; j++) {
-                board.markPosition(i, j, circle);
+                board.markPosition(new Position(i, j), CIRCLE);
             }
         }
-//        board.markPosition(1, 0, circle);
-//        board.markPosition(1, 1, circle);
-//        board.markPosition(1, 2, circle);
 
         //when
         GameStatus status = winLogic.checkWin();
 
         //then
-        Assertions.assertEquals(GameStatus.O_WON, status);
+        assertEquals(GameStatus.O_WON, status);
     }
 
     @Test
     public void shouldReturnWinDiagonalOPlayer() {
         //given
-        board.markPosition(0, 0, circle);
-        board.markPosition(1, 1, circle);
-        board.markPosition(2, 2, circle);
+        board.markPosition(new Position(0, 0), CIRCLE);
+        board.markPosition(new Position(1, 1), CIRCLE);
+        board.markPosition(new Position(2, 2), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
 
         //then
-        Assertions.assertEquals(GameStatus.O_WON, status);
+        assertEquals(GameStatus.O_WON, status);
     }
 
     @Test
     public void shouldReturnWinSecondaryDiagonalOPlayer() {
         //given
-        board.markPosition(0, 2, circle);
-        board.markPosition(1, 1, circle);
-        board.markPosition(2, 0, circle);
+        board.markPosition(new Position(0, 2), CIRCLE);
+        board.markPosition(new Position(1, 1), CIRCLE);
+        board.markPosition(new Position(2, 0), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
 
         //then
-        Assertions.assertEquals(GameStatus.O_WON, status);
+        assertEquals(GameStatus.O_WON, status);
     }
 
     @Test
     public void shouldReturnDraw() {
         //given
-        board.markPosition(0, 0, circle);
-        board.markPosition(1, 0, cross);
-        board.markPosition(2, 0, circle);
-        board.markPosition(0, 1, cross);
-        board.markPosition(1, 2, circle);
-        board.markPosition(1, 1, cross);
-        board.markPosition(2, 1, circle);
-        board.markPosition(2, 2, cross);
-        board.markPosition(0, 2, circle);
+        board.markPosition(new Position(0, 0), CIRCLE);
+        board.markPosition(new Position(1, 0), CROSS);
+        board.markPosition(new Position(2, 0), CIRCLE);
+        board.markPosition(new Position(0, 1), CROSS);
+        board.markPosition(new Position(1, 2), CIRCLE);
+        board.markPosition(new Position(1, 1), CROSS);
+        board.markPosition(new Position(2, 1), CIRCLE);
+        board.markPosition(new Position(2, 2), CROSS);
+        board.markPosition(new Position(0, 2), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
 
         //then
-        Assertions.assertEquals(GameStatus.DRAW, status);
+        assertEquals(GameStatus.DRAW, status);
+    }
+
+    @Test
+    public void shouldReturnOngoing() {
+        //given
+        board.markPosition(new Position(0, 0), CIRCLE);
+        board.markPosition(new Position(1, 0), CROSS);
+        board.markPosition(new Position(2, 0), CIRCLE);
+
+        //when
+        GameStatus status = winLogic.checkWin();
+
+        //then
+        assertEquals(GameStatus.ONGOING, status);
     }
 }
