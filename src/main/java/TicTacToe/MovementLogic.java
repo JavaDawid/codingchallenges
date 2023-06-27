@@ -3,7 +3,6 @@ package TicTacToe;
 import java.util.List;
 
 public class MovementLogic {
-
     private Board board;
     private ScannerWrapper scannerWrapper;
     private RandomWrapper randomWrapper;

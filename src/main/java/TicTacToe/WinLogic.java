@@ -16,9 +16,8 @@ public class WinLogic {
         }
         if (emptyFieldsPresent() == 0) {
             return GameStatus.DRAW;
-        } else {
-            return GameStatus.ONGOING;
         }
+        return GameStatus.ONGOING;
     }
 
     private boolean checkWin(Figures symbol) {
