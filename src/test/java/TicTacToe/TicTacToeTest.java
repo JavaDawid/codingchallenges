@@ -34,8 +34,8 @@ public class TicTacToeTest {
     public void testGameLoop() {
         //given
         when(winLogic.checkWin()).thenReturn(GameStatus.ONGOING,GameStatus.ONGOING,GameStatus.DRAW);
-        when(movementLogic.doAMove(Figures.CIRCLE.getCharacter())).thenReturn(position);
-        when(movementLogic.doAMove(Figures.CROSS.getCharacter())).thenReturn(position);
+        when(movementLogic.doMove(Figures.CIRCLE.getCharacter())).thenReturn(position);
+        when(movementLogic.doMove(Figures.CROSS.getCharacter())).thenReturn(position);
         when(position.getRowNumber()).thenReturn(0).thenReturn(1);
         when(position.getColumnNumber()).thenReturn(0).thenReturn(1);
 
@@ -44,7 +44,7 @@ public class TicTacToeTest {
 
         //then
         InOrder inOrder = inOrder(movementLogic);
-        inOrder.verify(movementLogic).doAMove(Figures.CIRCLE.getCharacter());
-        inOrder.verify(movementLogic).doAMove(Figures.CROSS.getCharacter());
+        inOrder.verify(movementLogic).doMove(Figures.CIRCLE.getCharacter());
+        inOrder.verify(movementLogic).doMove(Figures.CROSS.getCharacter());
     }
 }

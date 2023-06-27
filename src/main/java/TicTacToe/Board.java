@@ -13,15 +13,11 @@ public class Board {
         fillBoardEmptyPlace();
     }
 
-    public char[][] getBoard() {
-        return getBoardCopy(board);
-    }
-
-    public char[][] getBoardCopy(char[][] originalBoard) {
-        char[][] copyBoard = new char[originalBoard.length][originalBoard.length];
+    public char[][] getBoardCopy() {
+        char[][] copyBoard = new char[board.length][board.length];
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
-                copyBoard[i][j] = originalBoard[i][j];
+                copyBoard[i][j] = board[i][j];
             }
         }
         return copyBoard;
