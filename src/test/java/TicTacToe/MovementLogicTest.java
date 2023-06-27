@@ -34,7 +34,7 @@ public class MovementLogicTest {
         when(board.findFreePositions()).thenReturn(positions);
         when(randomWrapper.nextInt(anyInt())).thenReturn(0);
         //when
-        Position result = movementLogic.doAMove(Figures.CROSS.getCharacter());
+        Position result = movementLogic.doMove(Figures.CROSS.getCharacter());
 
         //then
         assertEquals(position1, result);
@@ -47,7 +47,7 @@ public class MovementLogicTest {
         when(scannerWrapper.input()).thenReturn(position1.getRowNumber(), position1.getColumnNumber());
 
         //when
-        Position result = movementLogic.doAMove(Figures.CIRCLE.getCharacter());
+        Position result = movementLogic.doMove(Figures.CIRCLE.getCharacter());
 
         //then
         assertEquals(position1, result);

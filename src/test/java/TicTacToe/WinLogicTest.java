@@ -18,7 +18,7 @@ public class WinLogicTest {
 
     private static final char CROSS = 'X';
     private static final char CIRCLE = 'O';
-    private final int size = 3;
+    private static final int SIZE = 3;
 
     @BeforeEach
     public void setUp() {
@@ -29,11 +29,7 @@ public class WinLogicTest {
     @Test
     public void shouldReturnWinColumnOPlayer() {
         //given
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < 1; j++) {
-                board.markPosition(new Position(i, j), CIRCLE);
-            }
-        }
+        setColumnsToCircle(SIZE, 1);
 
         //when
         GameStatus status = winLogic.checkWin();
@@ -45,11 +41,7 @@ public class WinLogicTest {
     @Test
     public void shouldReturnWinRowOPlayer() {
         //given
-        for (int i = 0; i < 1; i++) {
-            for (int j = 0; j < size; j++) {
-                board.markPosition(new Position(i, j), CIRCLE);
-            }
-        }
+        setColumnsToCircle(1, SIZE);
 
         //when
         GameStatus status = winLogic.checkWin();
@@ -118,5 +110,13 @@ public class WinLogicTest {
 
         //then
         assertEquals(GameStatus.ONGOING, status);
+    }
+
+    private void setColumnsToCircle(int size, int x) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < x; j++) {
+                board.markPosition(new Position(i, j), CIRCLE);
+            }
+        }
     }
 }

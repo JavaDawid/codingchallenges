@@ -4,7 +4,7 @@ public class TicTacToe {
     private WinLogic winLogic;
     private Board board;
     private UserInterface userInterface;
-    private Player movementLogic;
+    private MovementLogic movementLogic;
 
     public TicTacToe(Board board, WinLogic winLogic, MovementLogic movementLogic, UserInterface userInterface) {
         this.board = board;
@@ -44,7 +44,7 @@ public class TicTacToe {
     }
 
     public void moveGameLogic(Board board, char symbol) {
-        Position userMove = movementLogic.doAMove(symbol);
+        Position userMove = movementLogic.doMove(symbol);
         board.markPosition(userMove, symbol);
     }
 }

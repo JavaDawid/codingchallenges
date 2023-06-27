@@ -2,11 +2,10 @@ package TicTacToe;
 
 import java.util.List;
 
-public class MovementLogic implements Player {
-
+public class MovementLogic {
     private Board board;
     private ScannerWrapper scannerWrapper;
-    private RandomWrapper randomWrapper ;
+    private RandomWrapper randomWrapper;
 
     public MovementLogic(Board board, ScannerWrapper scannerWrapper, RandomWrapper randomWrapper) {
         this.board = board;
@@ -14,8 +13,7 @@ public class MovementLogic implements Player {
         this.randomWrapper = randomWrapper;
     }
 
-    @Override
-    public Position doAMove(char symbol) {
+    public Position doMove(char symbol) {
         Position position;
         if (symbol == Figures.CROSS.getCharacter()) {
             List<Position> emptyFields = board.findFreePositions();

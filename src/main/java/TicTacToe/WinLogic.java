@@ -16,14 +16,13 @@ public class WinLogic {
         }
         if (emptyFieldsPresent() == 0) {
             return GameStatus.DRAW;
-        } else {
-            return GameStatus.ONGOING;
         }
+        return GameStatus.ONGOING;
     }
 
     private boolean checkWin(Figures symbol) {
         char symbolChar = symbol.getCharacter();
-        for (int i = 0; i < board.getBoard().length; i++) {
+        for (int i = 0; i < board.getBoardCopy().length; i++) {
             if (checkSameSymbolInColumn(i, symbolChar) || checkSameSymbolInRow(i, symbolChar) ||
                     checkSameSymbolInDiagonal(symbolChar, true) || checkSameSymbolInDiagonal(symbolChar, false)) {
                 return true;
@@ -33,8 +32,8 @@ public class WinLogic {
     }
 
     private boolean checkSameSymbolInColumn(int columnNumber, char symbol) {
-        for (int i = 0; i < board.getBoard().length; i++) {
-            if (board.getBoard()[i][columnNumber] != symbol) {
+        for (int i = 0; i < board.getBoardCopy().length; i++) {
+            if (board.getBoardCopy()[i][columnNumber] != symbol) {
                 return false;
             }
         }
@@ -42,8 +41,8 @@ public class WinLogic {
     }
 
     private boolean checkSameSymbolInRow(int rowNumber, char symbol) {
-        for (int i = 0; i < board.getBoard().length; i++) {
-            if (board.getBoard()[rowNumber][i] != symbol) {
+        for (int i = 0; i < board.getBoardCopy().length; i++) {
+            if (board.getBoardCopy()[rowNumber][i] != symbol) {
                 return false;
             }
         }
@@ -51,9 +50,9 @@ public class WinLogic {
     }
 
     private boolean checkSameSymbolInDiagonal(char symbol, boolean isMainDiagonal) {
-        for (int i = 0; i < board.getBoard().length; i++) {
-            int j = isMainDiagonal ? i : board.getBoard().length - 1 - i;
-            if (board.getBoard()[i][j] != symbol) {
+        for (int i = 0; i < board.getBoardCopy().length; i++) {
+            int j = isMainDiagonal ? i : board.getBoardCopy().length - 1 - i;
+            if (board.getBoardCopy()[i][j] != symbol) {
                 return false;
             }
         }
@@ -62,9 +61,9 @@ public class WinLogic {
 
     private int emptyFieldsPresent() {
         int emptyFields = 0;
-        for (int i = 0; i < board.getBoard().length; i++) {
-            for (int j = 0; j < board.getBoard()[i].length; j++) {
-                if (board.getBoard()[i][j] == Figures.EMPTY.getCharacter()) {
+        for (int i = 0; i < board.getBoardCopy().length; i++) {
+            for (int j = 0; j < board.getBoardCopy()[i].length; j++) {
+                if (board.getBoardCopy()[i][j] == Figures.EMPTY.getCharacter()) {
                     emptyFields++;
                 }
             }
