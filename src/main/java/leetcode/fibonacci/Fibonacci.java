@@ -1,19 +1,13 @@
 package leetcode.fibonacci;
 
+import java.util.stream.Stream;
+
 public class Fibonacci {
     public int fib(int n) {
-        if (n == 0) {
-            return 0;
-        }
-        if (n == 1) {
-            return 1;
-        }
-        int digit1 = 0, digit2 = 1, current = 0;
-        for (int i = 2; i <= n; i++) {
-            current = digit1 + digit2;
-            digit1 = digit2;
-            digit2 = current;
-        }
-        return current;
+        return Stream.iterate(new int[]{0, 1}, ints -> new int[]{ints[1], ints[0] + ints[1]})
+                .limit(n + 1)
+                .map(ints -> ints[0])//zwraca pierwszy element dwuelementowej tablicy
+                .reduce((integer, integer2) -> integer2)//zwraca drugi element dwuelementowej tablicy
+                .orElse(0);
     }
 }

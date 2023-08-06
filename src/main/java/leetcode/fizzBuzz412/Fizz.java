@@ -1,16 +1,15 @@
 package leetcode.fizzBuzz412;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Fizz {
-    List<String> lists = new ArrayList<>();
 
     public List<String> fizzBuzz(int n) {
-        for (int i = 1; i <= n; i++) {
-            lists.add(getFizzBuzzValue(i));
-        }
-        return lists;
+        return IntStream.range(1, n + 1)
+                .mapToObj(value -> getFizzBuzzValue(value))
+                .collect(Collectors.toList());
     }
 
     private String getFizzBuzzValue(int i) {

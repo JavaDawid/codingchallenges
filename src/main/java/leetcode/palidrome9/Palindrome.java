@@ -1,7 +1,5 @@
 package leetcode.palidrome9;
 
-import java.util.Scanner;
-
 public class Palindrome {
 
     public boolean isPalindrome(int x) {
@@ -10,6 +8,7 @@ public class Palindrome {
         }
         int original = x;
         int reversed = 0;
+
         while (x > 0) {
             int digit = x % 10;
             reversed = reversed * 10 + digit;

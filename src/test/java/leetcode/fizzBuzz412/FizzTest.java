@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-class FizzTest {
+class  FizzTest {
     @Test
     public void shouldReturnFizzBuzz() {
         //given
