@@ -1,50 +1,38 @@
 package TicTacToe;
 
-public class TicTacToe {
-    private WinLogic winLogic;
-    private Board board;
-    private UserInterface userInterface;
-    private MovementLogic movementLogic;
+import lombok.AllArgsConstructor;
 
-    public TicTacToe(Board board, WinLogic winLogic, MovementLogic movementLogic, UserInterface userInterface) {
-        this.board = board;
-        this.winLogic = winLogic;
-        this.movementLogic = movementLogic;
-        this.userInterface = userInterface;
-    }
+@AllArgsConstructor
+public class TicTacToe {
+    private final Board board;
+    private final UserInterface userInterface;
+    private final PlayOption playOption;
+    private final WinLogic winLogic;
+    private final HumanPlayerFactory humanPlayerFactory;
+    private final ComputerPlayerFactory computerPlayerFactory;
+    private final PlayLogic playLogic;
+    private final ScannerWrapper scannerWrapper;
 
     public TicTacToe() {
+        this.scannerWrapper = new ScannerWrapper();
         this.board = new Board();
-        this.winLogic = new WinLogic(this.board);
-        this.movementLogic = new MovementLogic(this.board, new ScannerWrapper(), new RandomWrapper());
         this.userInterface = new UserInterface();
+        this.winLogic = new WinLogic(board);
+        this.humanPlayerFactory = new HumanPlayerFactory();
+        this.computerPlayerFactory = new ComputerPlayerFactory();
+        this.playLogic = new PlayLogic(board, winLogic, humanPlayerFactory, computerPlayerFactory);
+        this.playOption = new PlayOption(scannerWrapper, playLogic);
     }
 
     public void loop() {
+        int option = playOption.playOption();
         userInterface.startGame();
         board.printBoard();
         userInterface.printTemplate();
-        play();
-    }
-
-    public void play() {
-        int player = 1;
-        do {
-            if (player == 1) {
-                moveGameLogic(board, Figures.CIRCLE.getCharacter());
-                player = 2;
-            } else {
-                moveGameLogic(board, Figures.CROSS.getCharacter());
-                player = 1;
-            }
-            board.printBoard();
-            GameStatus status = winLogic.checkWin();
-            System.out.println(status);
-        } while (winLogic.checkWin() == GameStatus.ONGOING);
-    }
-
-    public void moveGameLogic(Board board, char symbol) {
-        Position userMove = movementLogic.doMove(symbol);
-        board.markPosition(userMove, symbol);
+        try {
+            playOption.chooseGameType(option);
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.getMessage());
+        }
     }
 }

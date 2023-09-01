@@ -53,9 +53,9 @@ public class WinLogicTest {
     @Test
     public void shouldReturnWinDiagonalOPlayer() {
         //given
-        board.markPosition(new Position(0, 0), CIRCLE);
-        board.markPosition(new Position(1, 1), CIRCLE);
-        board.markPosition(new Position(2, 2), CIRCLE);
+        board.markMove(new Position(0, 0), CIRCLE);
+        board.markMove(new Position(1, 1), CIRCLE);
+        board.markMove(new Position(2, 2), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
@@ -67,9 +67,9 @@ public class WinLogicTest {
     @Test
     public void shouldReturnWinSecondaryDiagonalOPlayer() {
         //given
-        board.markPosition(new Position(0, 2), CIRCLE);
-        board.markPosition(new Position(1, 1), CIRCLE);
-        board.markPosition(new Position(2, 0), CIRCLE);
+        board.markMove(new Position(0, 2), CIRCLE);
+        board.markMove(new Position(1, 1), CIRCLE);
+        board.markMove(new Position(2, 0), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
@@ -81,15 +81,15 @@ public class WinLogicTest {
     @Test
     public void shouldReturnDraw() {
         //given
-        board.markPosition(new Position(0, 0), CIRCLE);
-        board.markPosition(new Position(1, 0), CROSS);
-        board.markPosition(new Position(2, 0), CIRCLE);
-        board.markPosition(new Position(0, 1), CROSS);
-        board.markPosition(new Position(1, 2), CIRCLE);
-        board.markPosition(new Position(1, 1), CROSS);
-        board.markPosition(new Position(2, 1), CIRCLE);
-        board.markPosition(new Position(2, 2), CROSS);
-        board.markPosition(new Position(0, 2), CIRCLE);
+        board.markMove(new Position(0, 0), CIRCLE);
+        board.markMove(new Position(1, 0), CROSS);
+        board.markMove(new Position(2, 0), CIRCLE);
+        board.markMove(new Position(0, 1), CROSS);
+        board.markMove(new Position(1, 2), CIRCLE);
+        board.markMove(new Position(1, 1), CROSS);
+        board.markMove(new Position(2, 1), CIRCLE);
+        board.markMove(new Position(2, 2), CROSS);
+        board.markMove(new Position(0, 2), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
@@ -101,9 +101,9 @@ public class WinLogicTest {
     @Test
     public void shouldReturnOngoing() {
         //given
-        board.markPosition(new Position(0, 0), CIRCLE);
-        board.markPosition(new Position(1, 0), CROSS);
-        board.markPosition(new Position(2, 0), CIRCLE);
+        board.markMove(new Position(0, 0), CIRCLE);
+        board.markMove(new Position(1, 0), CROSS);
+        board.markMove(new Position(2, 0), CIRCLE);
 
         //when
         GameStatus status = winLogic.checkWin();
@@ -115,7 +115,7 @@ public class WinLogicTest {
     private void setColumnsToCircle(int size, int x) {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < x; j++) {
-                board.markPosition(new Position(i, j), CIRCLE);
+                board.markMove(new Position(i, j), CIRCLE);
             }
         }
     }

@@ -1,13 +1,15 @@
 package TicTacToe;
 
-import java.util.ArrayList;
+import lombok.AccessLevel;
+import lombok.Getter;
+
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Board {
-
-    private char[][] board = new char[3][3];
-
-    public List<Position> freePositions;
+    @Getter(AccessLevel.PROTECTED)
+    private final char[][] board = new char[3][3];
 
     public Board() {
         fillBoardEmptyPlace();
@@ -41,36 +43,25 @@ public class Board {
 
 
     public List<Position> findFreePositions() {
-        List<Position> boardWithEmptyField = new ArrayList<>();
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                if (board[i][j] == Figures.EMPTY.getCharacter()) {
-                    boardWithEmptyField.add(new Position(i, j));
-                }
-            }
-        }
-        return boardWithEmptyField;
+        return IntStream.range(0, board.length)
+                .boxed()
+                .flatMap(i -> IntStream.range(0, board[i].length).mapToObj(j -> new Position(i, j)))
+                .filter(position -> board[position.getRowNumber()][position.getColumnNumber()] == Figures.EMPTY.getCharacter())
+                .collect(Collectors.toList());
     }
 
-    public void markPosition(Position position, char symbol) {
-        Position move = new Position(position.getRowNumber(), position.getColumnNumber());
-        boolean positionIsFree = checkMoveWithFreePositionOnBoard(move);
-        if (!positionIsFree) {
-            throw new RuntimeException("Pozycja jest zajęta");
-        }
+    public boolean checkMoveWithFreePositionOnBoard(Position move) {
+        List<Position> freePositions = findFreePositions();
+        return freePositions.stream().anyMatch(position -> position.equals(move));
+    }
+
+    public void markMove(Position position, char symbol) {
         board[position.getRowNumber()][position.getColumnNumber()] = symbol;
     }
 
-    private boolean checkMoveWithFreePositionOnBoard(Position move) {
-        freePositions = findFreePositions();
-        return freePositions.contains(move);
-    }
-
     private void fillBoardEmptyPlace() {
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board.length; j++) {
-                board[i][j] = Figures.EMPTY.getCharacter();
-            }
-        }
+        IntStream.range(0, board.length)
+                .forEach(i -> IntStream.range(0, board[i].length)
+                        .forEach(j -> board[i][j] = Figures.EMPTY.getCharacter()));
     }
 }

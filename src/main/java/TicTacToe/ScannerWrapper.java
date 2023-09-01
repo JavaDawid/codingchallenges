@@ -8,4 +8,8 @@ public class ScannerWrapper {
     public int input() {
         return scanner.nextInt();
     }
+
+    public void cleaner() {
+        scanner.nextLine();
+    }
 }
