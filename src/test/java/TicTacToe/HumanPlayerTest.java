@@ -8,48 +8,48 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.InputMismatchException;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class HumanPlayerTest {
     @Mock
-    ScannerWrapper scannerWrapper;
+    private Board board;
     @Mock
-    Board board;
-    HumanPlayer humanPlayer;
-
-    private static final char CIRCLE = Figures.CIRCLE.getCharacter();
-    private static final char CROSS = Figures.CROSS.getCharacter();
+    private ScannerWrapper scannerWrapper;
+    @Mock
+    private Figures symbol;
+    private HumanPlayer humanPlayer;
 
     @BeforeEach
     public void setUp() {
-        humanPlayer = new HumanPlayer(scannerWrapper, board);
+        humanPlayer = new HumanPlayer(board, symbol, scannerWrapper);
     }
 
     @Test
     void shouldMarkMoveWhenPositionIsCorrect() {
         //given
         Position position = new Position(0, 0);
+        when(scannerWrapper.nextInt()).thenReturn(0).thenReturn(0);
+        when(board.isFreeAtPosition(position)).thenReturn(true);
 
         //when
-        when(scannerWrapper.input()).thenReturn(0).thenReturn(0);
-        when(board.checkMoveWithFreePositionOnBoard(position)).thenReturn(true);
-        humanPlayer.markMove(CIRCLE);
+        humanPlayer.makeMove();
+
         //then
-        verify(board).markMove(position, CIRCLE);
     }
 
     @Test
     void shouldReturnMessagePositionIsNotAvailable() {
         //given
         Position position = new Position(3, 0);
+        when(scannerWrapper.nextInt()).thenReturn(3).thenReturn(0);
+        when(board.isFreeAtPosition(position)).thenReturn(false);
 
         //when
-        when(scannerWrapper.input()).thenReturn(3).thenReturn(0);
-        humanPlayer.markMove(CROSS);
 
         //then
-        verify(board, times(0)).markMove(position, CROSS);
+        assertThrows(RuntimeException.class, () -> humanPlayer.makeMove());
 
     }
 
@@ -57,14 +57,14 @@ class HumanPlayerTest {
     void shouldReturnPositionIsIncorrectWithGameRulesAfterIncorrectUserInput() {
         //given
         Position position = new Position(0, 0);
+        when(scannerWrapper.nextInt()).thenThrow(new InputMismatchException())
+                .thenReturn(0).thenReturn(0);
+        when(board.isFreeAtPosition(position)).thenReturn(true);
 
         //when
-        when(scannerWrapper.input()).thenThrow(new InputMismatchException())
-                .thenReturn(0).thenReturn(0);
-        when(board.checkMoveWithFreePositionOnBoard(position)).thenReturn(true);
-        humanPlayer.markMove(CIRCLE);
+        humanPlayer.makeMove();
 
         //then
-        verify(board).markMove(position, CIRCLE);
+
     }
 }

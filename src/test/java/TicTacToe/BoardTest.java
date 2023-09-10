@@ -1,23 +1,47 @@
 package TicTacToe;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(MockitoExtension.class)
 public class BoardTest {
+    @Mock
+    private Figures figures;
+    @Mock
+    private TicTacToe ticTacToe;
+    @Mock
+    private Player player;
+    @Mock
+    private GameLoop gameLoop;
+    @Mock
+    private Player activePlayer;
+    @Mock
+    private WinLogic winLogic;
+    @InjectMocks
+    Board board;
+    private static final char CIRCLE = Figures.CIRCLE.getCharacter();
+
     @Test
     public void shouldFindFreePositions() {
         //given
-        Board board = new Board();
-        List<Position> filledPositions = fillBoard(board);
+        List<Position> filledPositions = fillFirstColumnOfBoard(board);
+        int totalPositions = 9;
 
         //when
         List<Position> freePositions = board.findFreePositions();
 
         //then
+        assertFalse(freePositions.isEmpty());
+        assertEquals(totalPositions - filledPositions.size(), freePositions.size());
+
         for (Position position : filledPositions) {
             assertFalse(freePositions.contains(position));
         }
@@ -26,24 +50,22 @@ public class BoardTest {
     @Test
     public void shouldMarkMove() {
         //given
-        Board board = new Board();
         Position move = new Position(0, 0);
 
         //when
-        board.markMove(move, Figures.CIRCLE.getCharacter());
+        board.markMove(move, CIRCLE);
 
         //then
-        assertFalse(board.checkMoveWithFreePositionOnBoard(move));
+        assertFalse(board.isFreeAtPosition(move));
     }
 
     @Test
     public void shouldReturnOriginalBoard() {
         //given
-        Board board = new Board();
         Position move = new Position(0, 0);
 
         //when
-        board.markMove(move, Figures.CIRCLE.getCharacter());
+        board.markMove(move, CIRCLE);
 
         //then
         char[][] original = board.getBoard();
@@ -56,7 +78,7 @@ public class BoardTest {
         }
     }
 
-    private static List<Position> fillBoard(Board board) {
+    private static List<Position> fillFirstColumnOfBoard(Board board) {
         List<Position> filledPosition = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 1; j++) {
