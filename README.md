@@ -5,61 +5,62 @@ In repository **scr/test/java/leetcode** you can find a set of task and algorith
 
 
 -  <b> Valid Anagram </b>
-checking if two words are anagrams. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+Check if two words are anagrams, where an anagram is a word or phrase formed by rearranging the letters of a different word or phrase.
 
     https://leetcode.com/problems/valid-anagram/
 
 
 - **Fibonacci Numbers**
-   is a series of numbers where a number is found by adding up the two numbers before it.
+  Calculate Fibonacci numbers, where each number is found by adding up the two numbers before it.
 
     https://leetcode.com/problems/fibonacci-number/
 
 - <b> First Unique Character in a String </b>
- find the first non-repeating character in input string.
+ Find the first non-repeating character in an input string.
 
   https://leetcode.com/problems/first-unique-character-in-a-string/
 
 - **Fizz Buzz**
-  return FizzBuzz, Fizz, Buzz for numbers divided by 3 and 5, divided only by 3 and only by 5.
+  Implement the game returning FizzBuzz, Fizz, Buzz for specific number conditions.
 
   https://leetcode.com/problems/fizz-buzz/
 
 
 - **Increase**
-multiplies two integers without multiplies sign.
+Multiply two integers without using the multiplication sign.
 
 
 - **Find Second largest element in an array**
-Given an array of integers, task of program is to finds the second-largest element present in the array.
+Given an array of integers, find the second-largest element in the array.
 
   https://www.geeksforgeeks.org/find-second-largest-element-array/
 
 - **Longest Common Prefix**
- find the longest common prefix from an array of strings. If there is no common prefix, return the empty string "".
+ Find the longest common prefix from an array of strings. If there is no common prefix, return the empty string "".
 
   https://leetcode.com/problems/longest-common-prefix/
 
 
-- <b>Palindrome Number</b> it take an integer x and return x if is a palindrome and return false in otherwise. Palindrome it is a number or word that read from both ways, has the same meaning.
+- <b>Palindrome Number</b>
+  Check if an integer is a palindrome, meaning it reads the same forwards and backwards.
 
    https://leetcode.com/problems/palindrome-number/
 
 
   
 - <b> Reverse String </b>
- it take an char array and return reversed array.
+Reverse a character array.
 
     https://leetcode.com/problems/reverse-string/
 
 
 - **Sort Characters By Frequency**
-  sorts the letters in input string by frequency in the decreasing order. The frequency of a character is the number of times it appears in the string.
+ Sort the letters in an input string by their frequency in decreasing order.
 
     https://leetcode.com/problems/sort-characters-by-frequency/
 
 - <b>Two Sum</b>
-that program take it array of integers and target integer. From array it select two numbers to add together will return target and return array index of that numbers.
+Given an array of integers and a target integer, find two numbers in the array that add up to the target and return their indices.
 
   https://leetcode.com/problems/two-sum/
 
