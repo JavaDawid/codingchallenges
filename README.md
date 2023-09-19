@@ -77,3 +77,21 @@ given a string "s" containing just the characters '(', ')', '{', '}', '[', ']', 
 #### TESTING ####
 
 All my algorithms code has tests. JUnit was used to write tests 
+
+
+#### RUNNING TESTS ####
+
+To run the tests for the recruitment algorithms, you should have a development environment set up with JUnit support. Below are the general steps to run the tests:
+
+1. **Clone the Repository:** If you haven't already, clone this repository to your local machine using Git:
+
+   ```bash
+   git clone https://github.com/JavaDawid/codingchallenges
+   
+2. **Ensure JUnit is Configured:** Make sure that JUnit Jupiter is properly configured in your project. If it's not, you can add it as a dependency to your project build file (e.g., pom.xml for Maven). You can find the dependency information in the **"DEPENDENCIES"** section of this README.
+
+3. **Run the Tests:** Navigate to the test packet <b><i>leetcode</i></b>. Right-click on the test class file and select "Run" or "Run as JUnit test," depending on your development environment.
+
+
+   https://prnt.sc/oY3t4-IcmO6
+   
