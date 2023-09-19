@@ -9,10 +9,10 @@ public class WinLogic {
     private Board board;
 
     public GameStatus checkWin() {
-        if (checkWin(Figures.CIRCLE)) {
+        if (checkWin(Figure.CIRCLE)) {
             return GameStatus.O_WON;
         }
-        if (checkWin(Figures.CROSS)) {
+        if (checkWin(Figure.CROSS)) {
             return GameStatus.X_WON;
         }
         if (emptyFieldsPresent() == 0) {
@@ -21,7 +21,7 @@ public class WinLogic {
         return GameStatus.ONGOING;
     }
 
-    private boolean checkWin(Figures symbol) {
+    private boolean checkWin(Figure symbol) {
         char symbolChar = symbol.getCharacter();
         for (int i = 0; i < board.getBoardCopy().length; i++) {
             if (checkSameSymbolInColumn(i, symbolChar) || checkSameSymbolInRow(i, symbolChar) ||
@@ -55,7 +55,7 @@ public class WinLogic {
     private int emptyFieldsPresent() {
         return (int) IntStream.range(0, board.getBoardCopy().length)
                 .flatMap(i -> IntStream.range(0, board.getBoardCopy()[i].length)
-                        .filter(j -> board.getBoardCopy()[i][j] == Figures.EMPTY.getCharacter()))
+                        .filter(j -> board.getBoardCopy()[i][j] == Figure.EMPTY.getCharacter()))
                 .count();
     }
 }

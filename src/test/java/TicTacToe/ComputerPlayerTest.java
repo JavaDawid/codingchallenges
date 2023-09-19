@@ -18,11 +18,9 @@ class ComputerPlayerTest {
     private Board board;
     @Mock
     private RandomWrapper randomWrapper;
-    @Mock
-    private Figures figures;
     @InjectMocks
     private ComputerPlayer computerPlayer;
-    private static final char EMPTY = Figures.EMPTY.getCharacter();
+    private static final char EMPTY = Figure.EMPTY.getCharacter();
 
     @Test
     public void shouldMarkMoveWhenFreePositionAvailable() {
@@ -56,7 +54,7 @@ class ComputerPlayerTest {
         List<Position> freePosition = new ArrayList<>();
         for (int i = 0; i < boardCopy.length; i++) {
             for (int j = 0; j < boardCopy.length; j++) {
-                if (boardCopy[i][j] == Figures.EMPTY.getCharacter()) {
+                if (boardCopy[i][j] == Figure.EMPTY.getCharacter()) {
                     freePosition.add(new Position(i, j));
                 }
             }

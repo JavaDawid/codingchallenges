@@ -8,8 +8,9 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.InputMismatchException;
 
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class HumanPlayerTest {
@@ -18,7 +19,7 @@ class HumanPlayerTest {
     @Mock
     private ScannerWrapper scannerWrapper;
     @Mock
-    private Figures symbol;
+    private Figure symbol;
     private HumanPlayer humanPlayer;
 
     @BeforeEach
@@ -31,12 +32,14 @@ class HumanPlayerTest {
         //given
         Position position = new Position(0, 0);
         when(scannerWrapper.nextInt()).thenReturn(0).thenReturn(0);
-        when(board.isFreeAtPosition(position)).thenReturn(true);
+        boolean freeAtPosition = board.isFreeAtPosition(position);
+        when(freeAtPosition).thenReturn(true);
 
         //when
         humanPlayer.makeMove();
 
         //then
+        assertFalse(freeAtPosition);
     }
 
     @Test
@@ -46,9 +49,7 @@ class HumanPlayerTest {
         when(scannerWrapper.nextInt()).thenReturn(3).thenReturn(0);
         when(board.isFreeAtPosition(position)).thenReturn(false);
 
-        //when
-
-        //then
+        //when then
         assertThrows(RuntimeException.class, () -> humanPlayer.makeMove());
 
     }
@@ -59,12 +60,13 @@ class HumanPlayerTest {
         Position position = new Position(0, 0);
         when(scannerWrapper.nextInt()).thenThrow(new InputMismatchException())
                 .thenReturn(0).thenReturn(0);
-        when(board.isFreeAtPosition(position)).thenReturn(true);
+        boolean freeAtPosition = board.isFreeAtPosition(position);
+        when(freeAtPosition).thenReturn(true);
 
         //when
         humanPlayer.makeMove();
 
         //then
-
+        assertFalse(freeAtPosition);
     }
 }

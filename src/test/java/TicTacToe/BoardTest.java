@@ -3,31 +3,19 @@ package TicTacToe;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 @ExtendWith(MockitoExtension.class)
 public class BoardTest {
-    @Mock
-    private Figures figures;
-    @Mock
-    private TicTacToe ticTacToe;
-    @Mock
-    private Player player;
-    @Mock
-    private GameLoop gameLoop;
-    @Mock
-    private Player activePlayer;
-    @Mock
-    private WinLogic winLogic;
     @InjectMocks
     Board board;
-    private static final char CIRCLE = Figures.CIRCLE.getCharacter();
+    private static final char CIRCLE = Figure.CIRCLE.getCharacter();
 
     @Test
     public void shouldFindFreePositions() {
@@ -53,7 +41,7 @@ public class BoardTest {
         Position move = new Position(0, 0);
 
         //when
-        board.markMove(move, CIRCLE);
+        board.markMove(move, Figure.CROSS.getCharacter());
 
         //then
         assertFalse(board.isFreeAtPosition(move));
@@ -82,7 +70,7 @@ public class BoardTest {
         List<Position> filledPosition = new ArrayList<>();
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 1; j++) {
-                board.markMove(new Position(i, j), Figures.CIRCLE.getCharacter());
+                board.markMove(new Position(i, j), Figure.CIRCLE.getCharacter());
                 filledPosition.add(new Position(i, j));
             }
         }

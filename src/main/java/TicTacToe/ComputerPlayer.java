@@ -8,7 +8,7 @@ import java.util.List;
 public class ComputerPlayer implements Player {
     private final Board board;
     private final RandomWrapper randomWrapper;
-    private final Figures symbol;
+    private final Figure symbol;
 
     @Override
     public void makeMove() {

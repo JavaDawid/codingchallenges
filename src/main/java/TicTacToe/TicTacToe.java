@@ -2,22 +2,17 @@ package TicTacToe;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import java.util.InputMismatchException;
 
 @RequiredArgsConstructor
+@Getter
 public class TicTacToe {
-    @NonNull
     private final Board board;
-    @NonNull
     private final HumanPlayerFactory humanPlayerFactory;
-    @NonNull
     private final ComputerPlayerFactory computerPlayerFactory;
-    @NonNull
     private final ScannerWrapper scannerWrapper;
-    @NonNull
     private final WinLogic winLogic;
     private Player playerCircle;
     private Player playerCross;
@@ -53,8 +48,8 @@ public class TicTacToe {
             default:
                 throw new IllegalArgumentException("Niepoprawna wartość. Wprowadź liczbę od 1 do 3");
         }
-        playerCircle = playerFactoryCircle.createPlayer(board, Figures.CIRCLE);
-        playerCross = playerFactoryCross.createPlayer(board, Figures.CROSS);
+        playerCircle = playerFactoryCircle.createPlayer(board, Figure.CIRCLE);
+        playerCross = playerFactoryCross.createPlayer(board, Figure.CROSS);
 
         UserInterface.startGame();
         board.printBoard();
@@ -66,14 +61,6 @@ public class TicTacToe {
     public int getGameTypFromUser() {
         UserInterface.gameVersion();
         return scannerWrapper.nextInt();
-    }
-
-    public Player getPlayerCircle() {
-        return playerCircle;
-    }
-
-    public Player getPlayerCross() {
-        return playerCross;
     }
 
     @AllArgsConstructor

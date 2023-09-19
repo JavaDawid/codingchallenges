@@ -1,5 +1,5 @@
 package TicTacToe;
 
 public interface PlayerFactory {
-    Player createPlayer(Board board, Figures symbol);
+    Player createPlayer(Board board, Figure symbol);
 }
