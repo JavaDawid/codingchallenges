@@ -90,8 +90,7 @@ To run the tests for the recruitment algorithms, you should have a development e
    
 2. **Ensure JUnit is Configured:** Make sure that JUnit Jupiter is properly configured in your project. If it's not, you can add it as a dependency to your project build file (e.g., pom.xml for Maven). You can find the dependency information in the **"DEPENDENCIES"** section of this README.
 
-3. **Run the Tests:** Navigate to the test packet <b><i>leetcode</i></b>. Right-click on the test class file and select "Run" or "Run as JUnit test," depending on your development environment.
+3. **Run the Tests:** Navigate to the test packet <b><i>leetcode</i></b>. Right-click on the test class file and select "Run".
 
+   ![test run](https://github.com/JavaDawid/codingchallenges/assets/122672760/3e16f388-c7f1-4e65-a30c-b34f0a9c52e5)
 
-   https://prnt.sc/oY3t4-IcmO6
-   
