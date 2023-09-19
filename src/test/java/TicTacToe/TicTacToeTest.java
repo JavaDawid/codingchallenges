@@ -25,8 +25,6 @@ public class TicTacToeTest {
     @Mock
     private ScannerWrapper scannerWrapper;
     @Mock
-    private WinLogic winLogic;
-    @Mock
     private HumanPlayer humanPlayer;
     @Mock
     private ComputerPlayer computerPlayer;
@@ -62,16 +60,16 @@ public class TicTacToeTest {
         when(scannerWrapper.nextInt()).thenReturn(value);
         switch (value) {
             case 1:
-                when(humanPlayerFactory.createPlayer(board, Figures.CIRCLE)).thenReturn(humanPlayer);
-                when(humanPlayerFactory.createPlayer(board, Figures.CROSS)).thenReturn(humanPlayer);
+                when(humanPlayerFactory.createPlayer(board, Figure.CIRCLE)).thenReturn(humanPlayer);
+                when(humanPlayerFactory.createPlayer(board, Figure.CROSS)).thenReturn(humanPlayer);
                 break;
             case 2:
-                when(humanPlayerFactory.createPlayer(board, Figures.CIRCLE)).thenReturn(humanPlayer);
-                when(computerPlayerFactory.createPlayer(board, Figures.CROSS)).thenReturn(computerPlayer);
+                when(humanPlayerFactory.createPlayer(board, Figure.CIRCLE)).thenReturn(humanPlayer);
+                when(computerPlayerFactory.createPlayer(board, Figure.CROSS)).thenReturn(computerPlayer);
                 break;
             case 3:
-                when(computerPlayerFactory.createPlayer(board, Figures.CIRCLE)).thenReturn(computerPlayer);
-                when(computerPlayerFactory.createPlayer(board, Figures.CROSS)).thenReturn(computerPlayer);
+                when(computerPlayerFactory.createPlayer(board, Figure.CIRCLE)).thenReturn(computerPlayer);
+                when(computerPlayerFactory.createPlayer(board, Figure.CROSS)).thenReturn(computerPlayer);
                 break;
         }
 

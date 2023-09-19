@@ -52,7 +52,7 @@ public class Board {
         List<Position> boardWithEmptyField = new ArrayList<>();
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
-                if (board[i][j] == Figures.EMPTY.getCharacter()) {
+                if (board[i][j] == Figure.EMPTY.getCharacter()) {
                     boardWithEmptyField.add(new Position(i, j));
                 }
             }
@@ -61,7 +61,7 @@ public class Board {
     }
 
     public boolean isFreeAtPosition(Position position) {
-        return board[position.getRowNumber()][position.getColumnNumber()] == Figures.EMPTY.getCharacter();
+        return board[position.getRowNumber()][position.getColumnNumber()] == Figure.EMPTY.getCharacter();
     }
 
     public void markMove(Position position, char symbol) {
@@ -71,7 +71,7 @@ public class Board {
     private void fillBoardEmptyPlace() {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
-                board[i][j] = Figures.EMPTY.getCharacter();
+                board[i][j] = Figure.EMPTY.getCharacter();
             }
         }
     }

@@ -1,12 +1,12 @@
 package TicTacToe;
 
-public enum Figures {
+public enum Figure {
     CROSS('X'),
     CIRCLE('O'),
     EMPTY(' ');
     private final char character;
 
-    Figures(char character) {
+    Figure(char character) {
         this.character = character;
     }
 

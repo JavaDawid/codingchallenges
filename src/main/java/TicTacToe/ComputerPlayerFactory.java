@@ -7,7 +7,7 @@ public class ComputerPlayerFactory implements PlayerFactory {
     private final RandomWrapper randomWrapper;
 
     @Override
-    public Player createPlayer(Board board, Figures symbol) {
+    public Player createPlayer(Board board, Figure symbol) {
         return new ComputerPlayer(board, randomWrapper, symbol);
     }
 }

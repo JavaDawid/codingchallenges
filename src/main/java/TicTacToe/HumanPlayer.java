@@ -7,7 +7,7 @@ import java.util.InputMismatchException;
 @AllArgsConstructor
 public class HumanPlayer implements Player {
     private final Board board;
-    private final Figures symbol;
+    private final Figure symbol;
     private final ScannerWrapper scannerWrapper;
 
     @Override
