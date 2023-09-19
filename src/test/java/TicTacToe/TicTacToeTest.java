@@ -1,50 +1,97 @@
 package TicTacToe;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InOrder;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.InputMismatchException;
+
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+@ExtendWith(MockitoExtension.class)
 public class TicTacToeTest {
 
     @Mock
-    private WinLogic winLogic;
-    @Mock
     private Board board;
     @Mock
-    private UserInterface userInterface;
+    private HumanPlayerFactory humanPlayerFactory;
     @Mock
-    private MovementLogic movementLogic;
+    private ComputerPlayerFactory computerPlayerFactory;
     @Mock
-    private Position position;
+    private ScannerWrapper scannerWrapper;
+    @Mock
+    private WinLogic winLogic;
+    @Mock
+    private HumanPlayer humanPlayer;
+    @Mock
+    private ComputerPlayer computerPlayer;
     @InjectMocks
     private TicTacToe ticTacToe;
 
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.openMocks(this);
-        ticTacToe = new TicTacToe(board, winLogic, movementLogic, userInterface);
+    @Test
+    public void shouldThrowInputMismatchExceptionWhenInvalidOptionProvided() {
+        //given
+        when(scannerWrapper.nextInt()).thenThrow(InputMismatchException.class);
+
+        //when
+
+        //then
+        assertThrows(InputMismatchException.class, () -> ticTacToe.getGameTypFromUser());
     }
 
     @Test
-    public void testGameLoop() {
+    public void shouldThrowIllegalArgumentExceptionWhenInvalidDigitProvided() {
         //given
-        when(winLogic.checkWin()).thenReturn(GameStatus.ONGOING,GameStatus.ONGOING,GameStatus.DRAW);
-        when(movementLogic.doMove(Figures.CIRCLE.getCharacter())).thenReturn(position);
-        when(movementLogic.doMove(Figures.CROSS.getCharacter())).thenReturn(position);
-        when(position.getRowNumber()).thenReturn(0).thenReturn(1);
-        when(position.getColumnNumber()).thenReturn(0).thenReturn(1);
+        when(scannerWrapper.nextInt()).thenReturn(4);
 
         //when
-        ticTacToe.loop();
 
         //then
-        InOrder inOrder = inOrder(movementLogic);
-        inOrder.verify(movementLogic).doMove(Figures.CIRCLE.getCharacter());
-        inOrder.verify(movementLogic).doMove(Figures.CROSS.getCharacter());
+        assertThrows(IllegalArgumentException.class, () -> ticTacToe.chooseGameType());
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    public void shouldSetCorrectPlayerTypesBasedOnUserInput(int value) {
+        //given
+        when(scannerWrapper.nextInt()).thenReturn(value);
+        switch (value) {
+            case 1:
+                when(humanPlayerFactory.createPlayer(board, Figures.CIRCLE)).thenReturn(humanPlayer);
+                when(humanPlayerFactory.createPlayer(board, Figures.CROSS)).thenReturn(humanPlayer);
+                break;
+            case 2:
+                when(humanPlayerFactory.createPlayer(board, Figures.CIRCLE)).thenReturn(humanPlayer);
+                when(computerPlayerFactory.createPlayer(board, Figures.CROSS)).thenReturn(computerPlayer);
+                break;
+            case 3:
+                when(computerPlayerFactory.createPlayer(board, Figures.CIRCLE)).thenReturn(computerPlayer);
+                when(computerPlayerFactory.createPlayer(board, Figures.CROSS)).thenReturn(computerPlayer);
+                break;
+        }
+
+        //when
+        ticTacToe.chooseGameType();
+
+        //then
+        switch (value) {
+            case 1:
+                assertTrue(ticTacToe.getPlayerCircle() instanceof HumanPlayer);
+                assertTrue(ticTacToe.getPlayerCross() instanceof HumanPlayer);
+                break;
+            case 2:
+                assertTrue(ticTacToe.getPlayerCircle() instanceof HumanPlayer);
+                assertTrue(ticTacToe.getPlayerCross() instanceof ComputerPlayer);
+                break;
+            case 3:
+                assertTrue(ticTacToe.getPlayerCircle() instanceof ComputerPlayer);
+                assertTrue(ticTacToe.getPlayerCross() instanceof ComputerPlayer);
+                break;
+        }
     }
 }

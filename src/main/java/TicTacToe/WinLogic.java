@@ -1,11 +1,12 @@
 package TicTacToe;
 
+import lombok.AllArgsConstructor;
+
+import java.util.stream.IntStream;
+
+@AllArgsConstructor
 public class WinLogic {
     private Board board;
-
-    public WinLogic(Board board) {
-        this.board = board;
-    }
 
     public GameStatus checkWin() {
         if (checkWin(Figures.CIRCLE)) {
@@ -32,21 +33,13 @@ public class WinLogic {
     }
 
     private boolean checkSameSymbolInColumn(int columnNumber, char symbol) {
-        for (int i = 0; i < board.getBoardCopy().length; i++) {
-            if (board.getBoardCopy()[i][columnNumber] != symbol) {
-                return false;
-            }
-        }
-        return true;
+        return IntStream.range(0, board.getBoardCopy().length)
+                .allMatch(i -> board.getBoardCopy()[i][columnNumber] == symbol);
     }
 
     private boolean checkSameSymbolInRow(int rowNumber, char symbol) {
-        for (int i = 0; i < board.getBoardCopy().length; i++) {
-            if (board.getBoardCopy()[rowNumber][i] != symbol) {
-                return false;
-            }
-        }
-        return true;
+        return IntStream.range(0, board.getBoardCopy().length)
+                .allMatch(i -> board.getBoardCopy()[rowNumber][i] == symbol);
     }
 
     private boolean checkSameSymbolInDiagonal(char symbol, boolean isMainDiagonal) {
@@ -60,14 +53,9 @@ public class WinLogic {
     }
 
     private int emptyFieldsPresent() {
-        int emptyFields = 0;
-        for (int i = 0; i < board.getBoardCopy().length; i++) {
-            for (int j = 0; j < board.getBoardCopy()[i].length; j++) {
-                if (board.getBoardCopy()[i][j] == Figures.EMPTY.getCharacter()) {
-                    emptyFields++;
-                }
-            }
-        }
-        return emptyFields;
+        return (int) IntStream.range(0, board.getBoardCopy().length)
+                .flatMap(i -> IntStream.range(0, board.getBoardCopy()[i].length)
+                        .filter(j -> board.getBoardCopy()[i][j] == Figures.EMPTY.getCharacter()))
+                .count();
     }
 }
