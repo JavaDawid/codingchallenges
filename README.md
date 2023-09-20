@@ -94,3 +94,16 @@ To run the tests for the recruitment algorithms, you should have a development e
 
    ![test run](https://github.com/JavaDawid/codingchallenges/assets/122672760/3e16f388-c7f1-4e65-a30c-b34f0a9c52e5)
 
+
+# Tic-Tac-Toe #
+
+
+## DESCRIPTION ##
+
+
+
+It's a popular 3X3 strategic board game for two players. 
+![1](https://github.com/JavaDawid/codingchallenges/assets/122672760/67fc84b1-d1c4-4409-b022-76ee6b0c5ee9)
+
+
+
