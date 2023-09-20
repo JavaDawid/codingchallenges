@@ -55,6 +55,7 @@ Reverse a character array.
 
 
 - **Sort Characters By Frequency**
+
  Sort the letters in an input string by their frequency in decreasing order.
 
     https://leetcode.com/problems/sort-characters-by-frequency/
@@ -102,8 +103,11 @@ To run the tests for the recruitment algorithms, you should have a development e
 
 
 
-It's a popular 3X3 strategic board game for two players. 
+It's a popular 3X3 strategic board game for two players. In my version also you can play with player AI vs player AI. 
 ![1](https://github.com/JavaDawid/codingchallenges/assets/122672760/67fc84b1-d1c4-4409-b022-76ee6b0c5ee9)
 
 
+## INSTALATION ##
 
+
+To run the game you should have a development environment set up with JUnit support. Below are the general steps to install the Tic-Tac-Toe :
