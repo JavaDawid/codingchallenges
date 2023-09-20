@@ -111,3 +111,12 @@ It's a popular 3X3 strategic board game for two players. In my version also you 
 
 
 To run the game you should have a development environment set up with JUnit support. Below are the general steps to install the Tic-Tac-Toe :
+
+## USAGE ## 
+
+Choose witch game type you want play
+
+
+
+## TESTTING ## 
+
