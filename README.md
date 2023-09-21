@@ -142,3 +142,9 @@ Run test class is in the same way like runing game
 
 ![x8](https://github.com/JavaDawid/codingchallenges/assets/122672760/4c31baf2-bef2-4a76-8cce-cc17321bdcb0)
 
+## DEPENDENCIES ##
+
+   - org.junit.jupiter.junit-jupiter-params:5.10.0
+   - org.mockito.mockito-junit-jupiter:5.3.1
+   - org.mockito.mockito-core:5.3.1
+   - org.projectlombok.lombok:1.18.28
