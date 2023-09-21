@@ -112,7 +112,14 @@ It's a popular 3X3 strategic board game for two players. In my version also you 
 
 To run the game you should have a development environment set up with JUnit support. Below are the general steps to install the Tic-Tac-Toe :
 
-## USAGE ## 
+ ![x1](https://github.com/JavaDawid/codingchallenges/assets/122672760/b1152c6e-78b8-4beb-95c0-7860d2ed9011)
+
+ ![x2](https://github.com/JavaDawid/codingchallenges/assets/122672760/6546b460-c158-476f-8dcc-9af6f4b13720)
+
+![x5](https://github.com/JavaDawid/codingchallenges/assets/122672760/5959983f-6d9c-4422-8987-0ad52ccb3837)
+
+
+## USAGE ##
 
 Choose witch game type you want play
 
