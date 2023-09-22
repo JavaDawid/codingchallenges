@@ -96,6 +96,11 @@ To run the tests for the recruitment algorithms, you should have a development e
    ![test run](https://github.com/JavaDawid/codingchallenges/assets/122672760/3e16f388-c7f1-4e65-a30c-b34f0a9c52e5)
 
 
+
+
+
+
+
 # Tic-Tac-Toe #
 
 
@@ -137,14 +142,15 @@ Choose class *main* and run game (screan higher). On begining you can choose wit
 
 ## TESTTING ## 
 
-Tests for Tic-Tac-Toe are localised in *test* package. Test class contains enviroment *Mockito* so copy file pom.xml is nesesary.
+Tests for Tic-Tac-Toe are localised in *test* package. Test class contains enviroment *Mockito* so copy file pom.xml (for Maven) is nesesary.
 Run test class is in the same way like runing game 
 
 ![x8](https://github.com/JavaDawid/codingchallenges/assets/122672760/4c31baf2-bef2-4a76-8cce-cc17321bdcb0)
 
 ## DEPENDENCIES ##
 
-   - org.junit.jupiter.junit-jupiter-params:5.10.0
-   - org.mockito.mockito-junit-jupiter:5.3.1
-   - org.mockito.mockito-core:5.3.1
-   - org.projectlombok.lombok:1.18.28
+   - org.junit.jupiter.junit-jupiter-params:5.10.0 (JUnitParams)
+   - org.mockito.mockito-junit-jupiter:5.3.1 (Mockito)
+   - org.mockito.mockito-core:5.3.1 (Mockito)
+   - org.projectlombok.lombok:1.18.28 (Lombok)
+
