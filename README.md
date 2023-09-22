@@ -96,12 +96,13 @@ To run the tests for the recruitment algorithms, you should have a development e
    ![test run](https://github.com/JavaDawid/codingchallenges/assets/122672760/3e16f388-c7f1-4e65-a30c-b34f0a9c52e5)
 
 
+# LICENCE #
+
+Algorithms used at that repositorium are property https://leetcode.com. Remember about these task are protected by LeetCode copyright.
 
 
 
-
-
-# Tic-Tac-Toe #
+   # Tic-Tac-Toe #
 
 
 ## DESCRIPTION ##
@@ -115,9 +116,9 @@ It's a popular 3X3 strategic board game for two players. In my version also you 
 ## INSTALATION ##
 
 
-To run the game you should have a development environment set up with JUnit support. Below are the general steps to install the Tic-Tac-Toe :
+//To run the game you should have a development environment set up with JUnit support. Below are the general steps to install the Tic-Tac-Toe :
 
-1. Clone your repositorium, you can use a comand from below with Git.
+1. If you haven't already, clone the Tic-Tac-Toe repository to your local machine using Git. Open your terminal and run the following command:
       
 
            git clone https://github.com/JavaDawid/codingchallenges
@@ -129,11 +130,11 @@ To run the game you should have a development environment set up with JUnit supp
 
  ![x2](https://github.com/JavaDawid/codingchallenges/assets/122672760/6546b460-c158-476f-8dcc-9af6f4b13720)
 
-2. Copy pom.xml and new src file with you download change with old one. Under it's correct screan how should look everything.
+2. Replacy the 'pom.xml' and 'src'. Inside the codingchallenges directory, you'll find a pom.xml file and a src directory. These contain project configuration and source code. If you want to use this project as a starting point for your development, replace your existing pom.xml and src directory code from download repositorium. Under it's correct screan how should look everything.
 
 ![x5](https://github.com/JavaDawid/codingchallenges/assets/122672760/5959983f-6d9c-4422-8987-0ad52ccb3837)
 
-
+    
 ## USAGE ##
 Choose class <i>main</i> and run game (screan higher). On begining you can choose with game you want play. If you choose option with human you must keep that format input data 
 
@@ -142,10 +143,19 @@ Choose class <i>main</i> and run game (screan higher). On begining you can choos
 
 ## TESTTING ## 
 
-Tests for Tic-Tac-Toe are localised in *test* package. Test class contains enviroment *Mockito* so copy file pom.xml (for Maven) is nesesary.
-Run test class is in the same way like runing game 
+Tests for Tic-Tac-Toe are localised in *test* package. All class contains personalized test names so you easy can see what kind of code is tested. Test class contains enviroment *Mockito* so copy file pom.xml is nesesary. Run test class is in the same way like runing game.
 
 ![x8](https://github.com/JavaDawid/codingchallenges/assets/122672760/4c31baf2-bef2-4a76-8cce-cc17321bdcb0)
+
+All test have positive results.
+
+![correct tests](https://github.com/JavaDawid/codingchallenges/assets/122672760/72273681-edc6-4700-8d5d-f41ff67f4bef)
+
+# Test coverage reports #
+
+![test coverage](https://github.com/JavaDawid/codingchallenges/assets/122672760/9dbe40e5-0e1c-4ce3-b60f-748157482435)
+
+
 
 ## DEPENDENCIES ##
 
@@ -153,4 +163,9 @@ Run test class is in the same way like runing game
    - org.mockito.mockito-junit-jupiter:5.3.1 (Mockito)
    - org.mockito.mockito-core:5.3.1 (Mockito)
    - org.projectlombok.lombok:1.18.28 (Lombok)
+
+
+## LICENCE ##
+
+The project is released with the https://www.apache.org/licenses/LICENSE-2.0
 
