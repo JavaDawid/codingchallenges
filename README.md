@@ -1,11 +1,20 @@
 ## TABLE OF CONTENTS ##
- * [Recrutiment algorithms](#recrutiment-algorithms)
-
- * [Tic-Tac-Toe](#tic-tac-toe)
-
+ * <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#recrutiment-algorithms"> Recrutiment algorithms </a>
+ 
  * <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#tic-tac-toe"> Tic-Tac-Toe </a>
 
 # RECRUTIMENT ALGORITHMS #
+
+## TABLE OF CONTENTS ##
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#description"> Description </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#dependencies"> Dependencies </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#testing"> Testing </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#running-tests"> Runing testing </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#licence"> Licence </a>
 
 #### DESCRIPTION ####
 In repository <i><b>scr/test/java/leetcode</b></i> you can find a set of task and algorithms that you can get at recruitment meeting. In each package with task you find class with solution and test class. Under can you find short description about each tasks with link to the LeetCode.
@@ -110,10 +119,23 @@ The algorithms used in this repository are the property of LeetCode (https://lee
 
    # Tic-Tac-Toe #
 
+## TABLE OF CONTENTS ##
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#description-1"> Description </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#instalation"> Instalation </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#usage"> Usage </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#testing-1"> Testing </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#test-coverage-reports"> Test Coverage Raport </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#dependencies-1"> Dependencies </a>
+
+* <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#licence-1"> Licence </a>
 
 ## DESCRIPTION ##
-
-
 
 It's a popular 3X3 strategic board game for two players. In my version also you can play with player AI vs player AI. 
 ![1](https://github.com/JavaDawid/codingchallenges/assets/122672760/67fc84b1-d1c4-4409-b022-76ee6b0c5ee9)
