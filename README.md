@@ -1,3 +1,10 @@
+## TABLE OF CONTENTS ##
+ * [Recrutiment algorithms](#recrutiment-algorithms)
+
+ * [Tic-Tac-Toe](#tic-tac-toe)
+
+ * <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#tic-tac-toe"> Tic-Tac-Toe </a>
+
 # RECRUTIMENT ALGORITHMS #
 
 #### DESCRIPTION ####
