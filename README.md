@@ -1,3 +1,4 @@
+README contains description two programs. Table of contents help you move around the file.
 ## TABLE OF CONTENTS ##
  * <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#recrutiment-algorithms"> Recrutiment algorithms </a>
  
@@ -112,14 +113,14 @@ To run the tests for the recruitment algorithms, you should have a development e
    ![test run](https://github.com/JavaDawid/codingchallenges/assets/122672760/3e16f388-c7f1-4e65-a30c-b34f0a9c52e5)
 
 
-# LICENCE #
+### LICENCE ###
 
 The algorithms used in this repository are the property of LeetCode (https://leetcode.com). Remember that these tasks are protected by LeetCode's copyright.
 
 
    # Tic-Tac-Toe #
 
-## TABLE OF CONTENTS ##
+### TABLE OF CONTENTS ###
 
 * <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#description-1"> Description </a>
 
@@ -135,13 +136,13 @@ The algorithms used in this repository are the property of LeetCode (https://lee
 
 * <a href="https://github.com/JavaDawid/codingchallenges/blob/master/README.md#licence-1"> Licence </a>
 
-## DESCRIPTION ##
+#### DESCRIPTION ####
 
 It's a popular 3X3 strategic board game for two players. In my version also you can play with player AI vs player AI. 
 ![1](https://github.com/JavaDawid/codingchallenges/assets/122672760/67fc84b1-d1c4-4409-b022-76ee6b0c5ee9)
 
 
-## INSTALATION ##
+#### INSTALATION ####
 
 
 1. If you haven't already, clone the Tic-Tac-Toe repository to your local machine using Git. Open your terminal and run the following command:
@@ -161,13 +162,13 @@ It's a popular 3X3 strategic board game for two players. In my version also you 
 ![x5](https://github.com/JavaDawid/codingchallenges/assets/122672760/5959983f-6d9c-4422-8987-0ad52ccb3837)
 
     
-## USAGE ##
+#### USAGE ####
 Choose class <i>main</i> and run game (screan higher). On begining you can choose with game you want play. If you choose option with human you must keep that format input data 
 
 ![x7](https://github.com/JavaDawid/codingchallenges/assets/122672760/5f234966-1da4-4aa7-b497-0e78b02374da)
 
 
-## TESTING ## 
+#### TESTING ####
 
 Tests for Tic-Tac-Toe are localised in *test* package. All class contains personalized test names so you easy can see what kind of code is tested. Test class contains enviroment *Mockito* so copy file pom.xml is nesesary. Run test class is in the same way like runing game.
 
@@ -183,7 +184,7 @@ All test have positive results.
 
 
 
-## DEPENDENCIES ##
+#### DEPENDENCIES ####
 
    - org.junit.jupiter.junit-jupiter-params:5.10.0 (JUnitParams)
    - org.mockito.mockito-junit-jupiter:5.3.1 (Mockito)
@@ -191,7 +192,7 @@ All test have positive results.
    - org.projectlombok.lombok:1.18.28 (Lombok)
 
 
-## LICENCE ##
+### LICENCE ###
 
 The Tic-Tac-Toe project is released under the Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0). Please refer to the LICENSE file for details.
 
